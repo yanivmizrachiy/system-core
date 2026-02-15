@@ -26,3 +26,7 @@
 - Governance: כל שינוי כאן ילווה בריצת governance_v4_auto
 
 - GitHub2 bootstrap noted @ 2026-02-15T20:16:38+02:00
+
+- 2026-02-15T18:17:31.891338 | APPLY MOVE-ONLY (Actions)
+  - applied=0 scanned=5
+  - policy: NO DELETE (MOVE ONLY to TRASH)
