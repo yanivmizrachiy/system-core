@@ -16,3 +16,13 @@
 - חובה: ב-Workflow env יש GITHUB_TOKEN, ואם רוצים private מלא — להגדיר Secret בשם GH_PAT עם הרשאות מתאימות.
 - תוצר: STATE/governance-v4/** כולל dashboard-v4.md ו-raw.json.
 - מדיניות: NO DELETE (MOVE ONLY ל-TRASH).
+
+## GitHub 2 — שכבת אוטומציה (gpt2)
+
+- ריפו ביצוע: yanivmizrachiy/github-2
+- SSOT כללים: yanivmizrachiy/system-core/RULES.md (הפרק הזה)
+- עקרונות על: NO DELETE (MOVE ONLY), תיעוד מלא, Commit רק כשיש שינוי
+- בטיחות: executor חסום עד להגדרת Allowlist+Schema
+- Governance: כל שינוי כאן ילווה בריצת governance_v4_auto
+
+- GitHub2 bootstrap noted @ 2026-02-15T20:16:38+02:00
