@@ -4,11 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       top_n:
-        description: "How many repos to process (top risk)"
+        description: "How many repos to show in dashboard"
         required: false
         default: "20"
-  schedule:
-    - cron: "17 */6 * * *"
 
 permissions:
   contents: write
@@ -31,16 +29,13 @@ jobs:
 
       - name: Sanity
         run: |
-          gh --version
-          echo "OWNER=$OWNER TOP_N=$TOP_N"
+          python -V
+          echo "OWNER=${OWNER} TOP_N=${TOP_N}"
           if [ -z "${GH_TOKEN}" ]; then
-            echo "❌ Missing token (GH_PAT or GITHUB_TOKEN)"; exit 2
+            echo "❌ Missing token (GH_PAT or GITHUB_TOKEN)"
+            exit 2
           fi
-
-      - name: Sanity: whoami via GH_TOKEN
-        run: |
-          echo "token_present=${GH_TOKEN:+yes}${GH_TOKEN:-no}"
-          python -c "import os; print(\"ENV_HAS_TOKEN=\", bool(os.environ.get(\"GH_TOKEN\")))"
+          echo "token_present=yes"
 
       - name: Run governance v4 auto
         run: |
