@@ -1,0 +1,22 @@
+[
+  {
+    "repo": "pdf-system",
+    "status": "CLONE_FAIL"
+  },
+  {
+    "repo": "n8n",
+    "status": "CLONE_FAIL"
+  },
+  {
+    "repo": "homerh-math-worksheets",
+    "status": "CLONE_FAIL"
+  },
+  {
+    "repo": "assistant-control-mobile",
+    "status": "CLONE_FAIL"
+  },
+  {
+    "repo": "14-1-26",
+    "status": "CLONE_FAIL"
+  }
+]

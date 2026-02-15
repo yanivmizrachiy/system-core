@@ -744,3 +744,7 @@ STATE/classification-2026-02-15T11:34:52+02:00.md
     - SAFE: 0
     - REVIEW: 0
 - 2026-02-15T16:15:11+02:00 | APPLY automation installed (fixed)
+
+- 2026-02-15T14:28:30.102838 | APPLY MOVE-ONLY (Actions)
+  - applied=0 scanned=5
+  - policy: NO DELETE (MOVE ONLY to TRASH)
