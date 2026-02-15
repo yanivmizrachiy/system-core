@@ -554,3 +554,20 @@ STATE/classification-2026-02-15T11:34:52+02:00.md
 **חסמים**
 - אין
 
+
+---
+
+## קטגוריה: CLEANUP
+
+### CLEANUP cycle+DONE: ACHUZIM — 2026-02-15T13:40:03+02:00
+[[CORE_LOG:2026-02-15|CLEANUP|CLEANUP cycle+DONE: ACHUZIM]]
+
+**מה בוצע**
+- TAG=ARCHIVE ; move-list COUNT=0 ; move-list=/data/data/com.termux/files/home/system-core/STATE/repo-move-lists/2026-02-15T13:40:02+02:00/ACHUZIM__move-list.txt ; audit=STATE/repo-audits/2026-02-15T13:40:02+02:00/ACHUZIM ; decision=/data/data/com.termux/files/home/system-core/STATE/repo-decisions/ACHUZIM.json ; plan->DONE=STATE/cleanup-plans-done/2026-02-15T13:34:29+02:00
+
+**מה הבא**
+- הבא: להריץ שוב כדי לטפל בריפו הבא
+
+**חסמים**
+- אין
+
