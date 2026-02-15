@@ -571,3 +571,20 @@ STATE/classification-2026-02-15T11:34:52+02:00.md
 **חסמים**
 - אין
 
+
+---
+
+## קטגוריה: CLEANUP
+
+### FIX sed error + rebuild move-list: ACHUZIM — 2026-02-15T13:41:56+02:00
+[[CORE_LOG:2026-02-15|CLEANUP|FIX sed error + rebuild move-list: ACHUZIM]]
+
+**מה בוצע**
+- move-list rebuilt: COUNT=0 ; PLAN=STATE/repo-move-lists/2026-02-15T13:40:02+02:00/ACHUZIM__move-list.txt ; decision_updated=YES
+
+**מה הבא**
+- הבא: להריץ שוב את ה-cycle לריפו הבא בתיקיית plans
+
+**חסמים**
+- אין
+
