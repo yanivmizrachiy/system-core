@@ -1,0 +1,11 @@
+total 19
+drwx------.  4 u0_a476 u0_a476 3452 Feb 15 13:35 .
+drwx------. 58 u0_a476 u0_a476 8192 Feb 15 13:35 ..
+drwx------.  7 u0_a476 u0_a476 3452 Feb 15 13:35 .git
+drwx------.  4 u0_a476 u0_a476 3452 Feb 15 13:35 .github
+
+.git/description
+.git/config
+.git/HEAD
+.git/packed-refs
+.git/index

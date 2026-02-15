@@ -1,0 +1,62 @@
+total 71
+drwx------. 11 u0_a476 u0_a476 3452 Feb 15 13:44 .
+drwx------. 60 u0_a476 u0_a476 8192 Feb 15 13:44 ..
+drwx------.  7 u0_a476 u0_a476 3452 Feb 15 13:44 .git
+drwx------.  3 u0_a476 u0_a476 3452 Feb 15 13:44 .github
+-rw-------.  1 u0_a476 u0_a476   20 Feb 15 13:44 .gitignore
+drwx------.  2 u0_a476 u0_a476 3452 Feb 15 13:44 .meta
+-rw-------.  1 u0_a476 u0_a476    0 Feb 15 13:44 .nojekyll
+-rw-------.  1 u0_a476 u0_a476  348 Feb 15 13:44 README.md
+drwx------.  2 u0_a476 u0_a476 3452 Feb 15 13:44 app
+drwx------.  2 u0_a476 u0_a476 3452 Feb 15 13:44 data
+drwx------.  2 u0_a476 u0_a476 3452 Feb 15 13:44 docs
+-rw-------.  1 u0_a476 u0_a476  601 Feb 15 13:44 index.html
+drwx------.  2 u0_a476 u0_a476 3452 Feb 15 13:44 scripts
+drwx------.  2 u0_a476 u0_a476 3452 Feb 15 13:44 tools
+-rw-------.  1 u0_a476 u0_a476 9230 Feb 15 13:44 כללים.md
+drwx------.  2 u0_a476 u0_a476 3452 Feb 15 13:44 פרקים
+-rw-------.  1 u0_a476 u0_a476  450 Feb 15 13:44 תוכנית_עבודה.md
+
+.git/description
+.git/config
+.git/HEAD
+.git/packed-refs
+.git/index
+.gitignore
+.meta/app_index_backup_20260210-081855.html
+.meta/app_index_backup_20260210-082005.html
+.meta/app_index_backup_20260210-082817.html
+.meta/force_pages_rebuild.txt
+.meta/force_rebuild.txt
+.meta/game_source_20260210-081855.html
+.meta/game_source_20260210-082005.html
+.nojekyll
+README.md
+app/index.html
+data/chapters.json
+docs/CHAPTERS_SPEC.md
+docs/ROADMAP.md
+docs/RULES.md
+docs/STATE.md
+docs/VSCODE_AI_PROMPT.md
+index.html
+scripts/add_chapter.py
+scripts/cc
+scripts/check.sh
+scripts/proof_server.sh
+scripts/qa.sh
+scripts/qa_hard.sh
+scripts/sync.sh
+tools/qa_local.sh
+כללים.md
+פרקים/פרק_01.md
+פרקים/פרק_02.md
+פרקים/פרק_03.md
+פרקים/פרק_04.md
+פרקים/פרק_05.md
+פרקים/פרק_06.md
+פרקים/פרק_07.md
+פרקים/פרק_08.md
+פרקים/פרק_09.md
+פרקים/פרק_10.md
+תוכנית_עבודה.md

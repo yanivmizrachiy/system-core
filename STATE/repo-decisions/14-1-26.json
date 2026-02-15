@@ -1,0 +1,9 @@
+{
+  "repo": "14-1-26",
+  "final_tag": "ACTIVE",
+  "move_list_count": 0,
+  "move_list_path": "/data/data/com.termux/files/home/system-core/STATE/repo-move-lists/2026-02-15T13:35:34+02:00/14-1-26__move-list.txt",
+  "audit_dir": "STATE/repo-audits/2026-02-15T13:35:34+02:00/14-1-26",
+  "ts": "2026-02-15T13:35:34+02:00",
+  "policy": "NO DELETE. If we apply cleanup: MOVE ONLY to TRASH."
+}

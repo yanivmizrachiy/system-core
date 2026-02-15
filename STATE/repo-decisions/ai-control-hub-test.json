@@ -1,0 +1,9 @@
+{
+  "repo": "ai-control-hub-test",
+  "final_tag": "ACTIVE",
+  "move_list_count": 0,
+  "move_list_path": "STATE/repo-move-lists/2026-02-15T13:47:02+02:00/ai-control-hub-test__move-list.txt",
+  "audit_dir": "STATE/repo-audits/2026-02-15T13:47:02+02:00/ai-control-hub-test",
+  "ts": "2026-02-15T13:47:02+02:00",
+  "policy": "NO DELETE. If we apply cleanup: MOVE ONLY to TRASH."
+}

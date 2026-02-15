@@ -1,0 +1,20 @@
+a9be397 docs: add/update Last Sync in RULES [RULES_SYNC_V2]
+c1f1bdc docs: force Last Sync (2026-02-11 16:27 UTC)
+fa338be docs: update RULES Last Sync [2026-02-11 16:26 UTC]
+8dfd3dc docs+qa: sync RULES + add local QA + CI workflow + VSCode AI prompt
+87813c6 feat: unify chapter status API (AH_CHAPTER_STATUS_API_V1)
+55f68fe docs: add canonical RULES (source of truth + backlog)
+9b6fdc1 fix: chapter list dynamic (define btn+locked) [AH_CHAPTER_LIST_DYNAMIC_V1]
+b59d102 feat: dynamic chapter list from chapters.json (AH_CHAPTER_LIST_DYNAMIC_V1)
+11f52e8 feat: base chapters UI (button+modal) [AH_CHAPTER_UI_BASE_V0]
+6f290f7 feat: per-chapter progress hook + progress bar (AH_PROGRESS_HOOK_V1) + update RULES
+3cf1c7f feat: per-chapter progress storage (AH_PROGRESS_V1)
+a9ce932 feat: per-chapter stats infrastructure (AH_STATS_PER_CHAPTER_V1)
+3deae24 feat: dynamic render from chapters.json with safe injection (AH_RENDER_DYNAMIC_V1)
+d1547d8 feat: dynamic questions loader with fallback (AH_QUESTIONS_LOADER_V1)
+d7ffaa3 data: add initial questions to chapter c2
+9d313de feat: selected chapter banner (AH_SELECTED_CHAPTER_V1)
+e4fae7c docs: fix RULES AUTO block (clean)
+4243445 chore: force rebuild (pages cache buster)
+2e5ac63 docs: fix RULES snapshot + include c2
+cd0f23a docs: mark AH_CHAPTERS_V1 server-verified in canonical RULES

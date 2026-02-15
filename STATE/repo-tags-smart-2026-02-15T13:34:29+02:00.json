@@ -1,0 +1,612 @@
+[
+  {
+    "name": "aaa",
+    "tag": "ACTIVE",
+    "why": "Active (recent), but keep for now",
+    "vis": "public",
+    "updatedAt": "2026-02-04T16:58:50Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/aaa",
+    "desc": "fdsfs"
+  },
+  {
+    "name": "ai-worksheets-generator",
+    "tag": "ACTIVE",
+    "why": "Active (recent), but keep for now",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:01:23Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/ai-worksheets-generator",
+    "desc": "AI-Powered Worksheet Generator with GitHub Copilot & Google AI Studio integration. Full pe"
+  },
+  {
+    "name": "botteddy",
+    "tag": "ACTIVE",
+    "why": "Active (recent), but keep for now",
+    "vis": "public",
+    "updatedAt": "2026-02-04T16:59:07Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/botteddy",
+    "desc": "🤖 בוט חכם אינטראקטיבי עבור חטיבת הביניים ע'ש טדי קולק בפסגת זאב - מדריך פסגת זאב השנון"
+  },
+  {
+    "name": "btd",
+    "tag": "ACTIVE",
+    "why": "Active (recent), but keep for now",
+    "vis": "public",
+    "updatedAt": "2026-02-04T16:59:10Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/btd",
+    "desc": "🤖 בוטדי - קישור קצר"
+  },
+  {
+    "name": "digital-pdf-book",
+    "tag": "ACTIVE",
+    "why": "Core repo (SSOT/primary)",
+    "vis": "public",
+    "updatedAt": "2026-02-13T13:53:41Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/digital-pdf-book",
+    "desc": ""
+  },
+  {
+    "name": "geometry-concepts-app",
+    "tag": "ACTIVE",
+    "why": "Active (recent), but keep for now",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:01:47Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/geometry-concepts-app",
+    "desc": "Geometry concepts educational app - מושגים בגיאומטריה"
+  },
+  {
+    "name": "GPT",
+    "tag": "ACTIVE",
+    "why": "Core repo (SSOT/primary)",
+    "vis": "public",
+    "updatedAt": "2026-02-14T21:55:26Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/GPT",
+    "desc": "GPT math pages + rules (HTML/CSS separated)"
+  },
+  {
+    "name": "math-materials-website",
+    "tag": "ACTIVE",
+    "why": "Active (recent), but keep for now",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:00:36Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/math-materials-website",
+    "desc": "Math materials website - Complete learning platform for grades 7-9 and Bagrut"
+  },
+  {
+    "name": "math-tutor-app",
+    "tag": "ACTIVE",
+    "why": "Active (recent), but keep for now",
+    "vis": "private",
+    "updatedAt": "2026-02-04T16:58:19Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/math-tutor-app",
+    "desc": "Hebrew RTL Math Tutor Management App - Production-ready system with D1 database"
+  },
+  {
+    "name": "math-worksheets-hub",
+    "tag": "ACTIVE",
+    "why": "Active (recent), but keep for now",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:01:21Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/math-worksheets-hub",
+    "desc": "🎓 מרכז מאוחד לדפי עבודה במתמטיקה - תבניות, כלי יצירה, ודפי תרגול לכיתות ז'-י\"ב | Unified M"
+  },
+  {
+    "name": "my-assistant",
+    "tag": "ACTIVE",
+    "why": "Core repo (SSOT/primary)",
+    "vis": "public",
+    "updatedAt": "2026-02-15T09:52:27Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/my-assistant",
+    "desc": ""
+  },
+  {
+    "name": "n8n",
+    "tag": "ACTIVE",
+    "why": "Core repo (SSOT/primary)",
+    "vis": "private",
+    "updatedAt": "2026-02-14T22:02:51Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/n8n",
+    "desc": ""
+  },
+  {
+    "name": "pdf-system",
+    "tag": "ACTIVE",
+    "why": "Core repo (SSOT/primary)",
+    "vis": "private",
+    "updatedAt": "2026-02-15T05:43:19Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/pdf-system",
+    "desc": ""
+  },
+  {
+    "name": "sefer1",
+    "tag": "ACTIVE",
+    "why": "Active (recent), but keep for now",
+    "vis": "public",
+    "updatedAt": "2026-02-09T22:09:39Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/sefer1",
+    "desc": "ספר מספר 1"
+  },
+  {
+    "name": "silavus",
+    "tag": "ACTIVE",
+    "why": "Active (recent), but keep for now",
+    "vis": "public",
+    "updatedAt": "2026-01-19T05:06:07Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/silavus",
+    "desc": "silavus"
+  },
+  {
+    "name": "studiomath",
+    "tag": "ACTIVE",
+    "why": "Core repo (SSOT/primary)",
+    "vis": "public",
+    "updatedAt": "2026-02-13T05:12:27Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/studiomath",
+    "desc": ""
+  },
+  {
+    "name": "system-core",
+    "tag": "ACTIVE",
+    "why": "Core repo (SSOT/primary)",
+    "vis": "public",
+    "updatedAt": "2026-02-15T09:44:44Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/system-core",
+    "desc": ""
+  },
+  {
+    "name": "termux",
+    "tag": "ACTIVE",
+    "why": "Core repo (SSOT/primary)",
+    "vis": "public",
+    "updatedAt": "2026-02-14T20:24:25Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/termux",
+    "desc": ""
+  },
+  {
+    "name": "tet1",
+    "tag": "ACTIVE",
+    "why": "Active (recent), but keep for now",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:01:41Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/tet1",
+    "desc": "hgg"
+  },
+  {
+    "name": "Yanivatar",
+    "tag": "ACTIVE",
+    "why": "Active (recent), but keep for now",
+    "vis": "public",
+    "updatedAt": "2026-01-19T05:06:09Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/Yanivatar",
+    "desc": "שלום"
+  },
+  {
+    "name": "-",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "public",
+    "updatedAt": "2026-02-08T13:22:04Z",
+    "branch": "",
+    "url": "https://github.com/yanivmizrachiy/-",
+    "desc": ""
+  },
+  {
+    "name": "14-1-26",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:02:25Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/14-1-26",
+    "desc": ""
+  },
+  {
+    "name": "ACHUZIM",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "public",
+    "updatedAt": "2026-02-11T14:59:30Z",
+    "branch": "",
+    "url": "https://github.com/yanivmizrachiy/ACHUZIM",
+    "desc": ""
+  },
+  {
+    "name": "ahuzim",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "public",
+    "updatedAt": "2026-02-11T16:30:37Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/ahuzim",
+    "desc": ""
+  },
+  {
+    "name": "ai-control-hub-test",
+    "tag": "CLEANUP",
+    "why": "Name looks like temp/test/old/backup/v*",
+    "vis": "public",
+    "updatedAt": "2026-02-04T16:58:17Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/ai-control-hub-test",
+    "desc": "AI Control Hub - Test Repository for OpenAI + GitHub Integration"
+  },
+  {
+    "name": "ai-orchestrator-2026-01-14",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "private",
+    "updatedAt": "2026-02-04T16:59:43Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/ai-orchestrator-2026-01-14",
+    "desc": ""
+  },
+  {
+    "name": "assistant-control-mobile",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "public",
+    "updatedAt": "2026-02-04T16:58:56Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/assistant-control-mobile",
+    "desc": ""
+  },
+  {
+    "name": "atarbook",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "public",
+    "updatedAt": "2026-02-11T22:09:30Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/atarbook",
+    "desc": ""
+  },
+  {
+    "name": "auto-sync-hub",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "private",
+    "updatedAt": "2026-02-04T16:59:18Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/auto-sync-hub",
+    "desc": ""
+  },
+  {
+    "name": "bagrut-exam",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:01:45Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/bagrut-exam",
+    "desc": ""
+  },
+  {
+    "name": "func",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "public",
+    "updatedAt": "2026-02-06T12:12:16Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/func",
+    "desc": ""
+  },
+  {
+    "name": "geometry-ai-project",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:02:27Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/geometry-ai-project",
+    "desc": ""
+  },
+  {
+    "name": "hadracha",
+    "tag": "CLEANUP",
+    "why": "Very similar to hadracha2 (sim=0.94)",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:01:53Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/hadracha",
+    "desc": "mnbm,"
+  },
+  {
+    "name": "hadracha2",
+    "tag": "CLEANUP",
+    "why": "Very similar to hadracha (sim=0.94)",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:01:54Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/hadracha2",
+    "desc": ""
+  },
+  {
+    "name": "hakbaza",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:00:42Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/hakbaza",
+    "desc": ""
+  },
+  {
+    "name": "hey",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "public",
+    "updatedAt": "2026-02-09T19:10:56Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/hey",
+    "desc": ""
+  },
+  {
+    "name": "hishtalmut",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "public",
+    "updatedAt": "2026-01-19T05:03:09Z",
+    "branch": "",
+    "url": "https://github.com/yanivmizrachiy/hishtalmut",
+    "desc": ""
+  },
+  {
+    "name": "homerh-math-worksheets",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "public",
+    "updatedAt": "2026-01-11T23:28:39Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/homerh-math-worksheets",
+    "desc": ""
+  },
+  {
+    "name": "kavit",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:00:36Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/kavit",
+    "desc": ""
+  },
+  {
+    "name": "luztedi",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "public",
+    "updatedAt": "2026-02-10T15:29:18Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/luztedi",
+    "desc": ""
+  },
+  {
+    "name": "maagar",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "public",
+    "updatedAt": "2026-02-11T21:36:02Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/maagar",
+    "desc": ""
+  },
+  {
+    "name": "math-worksheet",
+    "tag": "CLEANUP",
+    "why": "Very similar to math-worksheets (sim=0.97)",
+    "vis": "public",
+    "updatedAt": "2026-02-04T16:58:20Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/math-worksheet",
+    "desc": ""
+  },
+  {
+    "name": "math-worksheet-lab",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "private",
+    "updatedAt": "2026-02-04T16:58:35Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/math-worksheet-lab",
+    "desc": ""
+  },
+  {
+    "name": "math-worksheets",
+    "tag": "CLEANUP",
+    "why": "Very similar to math-worksheet (sim=0.97)",
+    "vis": "public",
+    "updatedAt": "2026-02-04T16:57:51Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/math-worksheets",
+    "desc": ""
+  },
+  {
+    "name": "mivhan-math",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:00:16Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/mivhan-math",
+    "desc": ""
+  },
+  {
+    "name": "My-Automation-Logs",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "public",
+    "updatedAt": "2026-02-04T23:01:40Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/My-Automation-Logs",
+    "desc": ""
+  },
+  {
+    "name": "myfunction",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "public",
+    "updatedAt": "2026-02-12T14:27:58Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/myfunction",
+    "desc": ""
+  },
+  {
+    "name": "professional-math-development-jerusalem",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:01:53Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/professional-math-development-jerusalem",
+    "desc": ""
+  },
+  {
+    "name": "projects-analysis-report",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:01:07Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/projects-analysis-report",
+    "desc": ""
+  },
+  {
+    "name": "rip11-2-26",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "public",
+    "updatedAt": "2026-02-11T04:33:15Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/rip11-2-26",
+    "desc": ""
+  },
+  {
+    "name": "school-schedule",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "public",
+    "updatedAt": "2026-02-09T13:58:31Z",
+    "branch": "",
+    "url": "https://github.com/yanivmizrachiy/school-schedule",
+    "desc": ""
+  },
+  {
+    "name": "sefer2",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:00:21Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/sefer2",
+    "desc": ""
+  },
+  {
+    "name": "silav",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "public",
+    "updatedAt": "2026-02-08T15:00:15Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/silav",
+    "desc": ""
+  },
+  {
+    "name": "student-management-system",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:01:48Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/student-management-system",
+    "desc": ""
+  },
+  {
+    "name": "TALMID",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "public",
+    "updatedAt": "2026-02-06T12:29:59Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/TALMID",
+    "desc": ""
+  },
+  {
+    "name": "ultra",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "public",
+    "updatedAt": "2026-02-04T16:57:44Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/ultra",
+    "desc": ""
+  },
+  {
+    "name": "yaniv-control-center",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "private",
+    "updatedAt": "2026-02-04T17:01:07Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/yaniv-control-center",
+    "desc": ""
+  },
+  {
+    "name": "yaniv-files-app",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:00:57Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/yaniv-files-app",
+    "desc": ""
+  },
+  {
+    "name": "yaniv-site",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "private",
+    "updatedAt": "2026-02-04T17:01:15Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/yaniv-site",
+    "desc": ""
+  },
+  {
+    "name": "yaniv-web",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "public",
+    "updatedAt": "2026-02-04T16:57:47Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/yaniv-web",
+    "desc": ""
+  },
+  {
+    "name": "yanivraz1",
+    "tag": "CLEANUP",
+    "why": "Empty description (review)",
+    "vis": "public",
+    "updatedAt": "2026-02-04T16:57:58Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/yanivraz1",
+    "desc": ""
+  }
+]

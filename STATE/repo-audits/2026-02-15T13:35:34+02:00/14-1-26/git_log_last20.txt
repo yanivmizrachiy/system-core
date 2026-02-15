@@ -1,0 +1,2 @@
+453f77f chore: add apply issue template (auto label)
+7bf61da chore: add assistant apply workflow (issues -> commit)

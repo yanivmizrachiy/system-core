@@ -1,0 +1,612 @@
+[
+  {
+    "name": "my-assistant",
+    "tag": "ACTIVE",
+    "why": "Updated 0d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-15T09:52:27Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/my-assistant",
+    "desc": ""
+  },
+  {
+    "name": "system-core",
+    "tag": "ACTIVE",
+    "why": "Updated 0d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-15T09:44:44Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/system-core",
+    "desc": ""
+  },
+  {
+    "name": "pdf-system",
+    "tag": "ACTIVE",
+    "why": "Updated 0d ago",
+    "vis": "private",
+    "updatedAt": "2026-02-15T05:43:19Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/pdf-system",
+    "desc": ""
+  },
+  {
+    "name": "n8n",
+    "tag": "ACTIVE",
+    "why": "Updated 0d ago",
+    "vis": "private",
+    "updatedAt": "2026-02-14T22:02:51Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/n8n",
+    "desc": ""
+  },
+  {
+    "name": "GPT",
+    "tag": "ACTIVE",
+    "why": "Updated 0d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-14T21:55:26Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/GPT",
+    "desc": "GPT math pages + rules (HTML/CSS separated)"
+  },
+  {
+    "name": "termux",
+    "tag": "ACTIVE",
+    "why": "Updated 0d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-14T20:24:25Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/termux",
+    "desc": ""
+  },
+  {
+    "name": "digital-pdf-book",
+    "tag": "ACTIVE",
+    "why": "Updated 1d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-13T13:53:41Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/digital-pdf-book",
+    "desc": ""
+  },
+  {
+    "name": "studiomath",
+    "tag": "ACTIVE",
+    "why": "Updated 2d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-13T05:12:27Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/studiomath",
+    "desc": ""
+  },
+  {
+    "name": "myfunction",
+    "tag": "ACTIVE",
+    "why": "Updated 2d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-12T14:27:58Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/myfunction",
+    "desc": ""
+  },
+  {
+    "name": "atarbook",
+    "tag": "ACTIVE",
+    "why": "Updated 3d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-11T22:09:30Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/atarbook",
+    "desc": ""
+  },
+  {
+    "name": "maagar",
+    "tag": "ACTIVE",
+    "why": "Updated 3d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-11T21:36:02Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/maagar",
+    "desc": ""
+  },
+  {
+    "name": "ahuzim",
+    "tag": "ACTIVE",
+    "why": "Updated 3d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-11T16:30:37Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/ahuzim",
+    "desc": ""
+  },
+  {
+    "name": "ACHUZIM",
+    "tag": "ACTIVE",
+    "why": "Updated 3d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-11T14:59:30Z",
+    "branch": "",
+    "url": "https://github.com/yanivmizrachiy/ACHUZIM",
+    "desc": ""
+  },
+  {
+    "name": "rip11-2-26",
+    "tag": "ACTIVE",
+    "why": "Updated 4d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-11T04:33:15Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/rip11-2-26",
+    "desc": ""
+  },
+  {
+    "name": "luztedi",
+    "tag": "ACTIVE",
+    "why": "Updated 4d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-10T15:29:18Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/luztedi",
+    "desc": ""
+  },
+  {
+    "name": "sefer1",
+    "tag": "ACTIVE",
+    "why": "Updated 5d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-09T22:09:39Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/sefer1",
+    "desc": "ספר מספר 1"
+  },
+  {
+    "name": "hey",
+    "tag": "ACTIVE",
+    "why": "Updated 5d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-09T19:10:56Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/hey",
+    "desc": ""
+  },
+  {
+    "name": "school-schedule",
+    "tag": "ACTIVE",
+    "why": "Updated 5d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-09T13:58:31Z",
+    "branch": "",
+    "url": "https://github.com/yanivmizrachiy/school-schedule",
+    "desc": ""
+  },
+  {
+    "name": "silav",
+    "tag": "ACTIVE",
+    "why": "Updated 6d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-08T15:00:15Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/silav",
+    "desc": ""
+  },
+  {
+    "name": "-",
+    "tag": "ACTIVE",
+    "why": "Updated 6d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-08T13:22:04Z",
+    "branch": "",
+    "url": "https://github.com/yanivmizrachiy/-",
+    "desc": ""
+  },
+  {
+    "name": "TALMID",
+    "tag": "ACTIVE",
+    "why": "Updated 8d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-06T12:29:59Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/TALMID",
+    "desc": ""
+  },
+  {
+    "name": "func",
+    "tag": "ACTIVE",
+    "why": "Updated 8d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-06T12:12:16Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/func",
+    "desc": ""
+  },
+  {
+    "name": "My-Automation-Logs",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-04T23:01:40Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/My-Automation-Logs",
+    "desc": ""
+  },
+  {
+    "name": "geometry-ai-project",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:02:27Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/geometry-ai-project",
+    "desc": ""
+  },
+  {
+    "name": "14-1-26",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:02:25Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/14-1-26",
+    "desc": ""
+  },
+  {
+    "name": "hadracha2",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:01:54Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/hadracha2",
+    "desc": ""
+  },
+  {
+    "name": "professional-math-development-jerusalem",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:01:53Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/professional-math-development-jerusalem",
+    "desc": ""
+  },
+  {
+    "name": "hadracha",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:01:53Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/hadracha",
+    "desc": "mnbm,"
+  },
+  {
+    "name": "student-management-system",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:01:48Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/student-management-system",
+    "desc": ""
+  },
+  {
+    "name": "geometry-concepts-app",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:01:47Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/geometry-concepts-app",
+    "desc": "Geometry concepts educational app - מושגים בגיאומטריה"
+  },
+  {
+    "name": "bagrut-exam",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:01:45Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/bagrut-exam",
+    "desc": ""
+  },
+  {
+    "name": "tet1",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:01:41Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/tet1",
+    "desc": "hgg"
+  },
+  {
+    "name": "ai-worksheets-generator",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:01:23Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/ai-worksheets-generator",
+    "desc": "AI-Powered Worksheet Generator with GitHub Copilot & Google AI Studio integration. Full pe"
+  },
+  {
+    "name": "math-worksheets-hub",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:01:21Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/math-worksheets-hub",
+    "desc": "🎓 מרכז מאוחד לדפי עבודה במתמטיקה - תבניות, כלי יצירה, ודפי תרגול לכיתות ז'-י\"ב | Unified M"
+  },
+  {
+    "name": "yaniv-site",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "private",
+    "updatedAt": "2026-02-04T17:01:15Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/yaniv-site",
+    "desc": ""
+  },
+  {
+    "name": "projects-analysis-report",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:01:07Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/projects-analysis-report",
+    "desc": ""
+  },
+  {
+    "name": "yaniv-control-center",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "private",
+    "updatedAt": "2026-02-04T17:01:07Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/yaniv-control-center",
+    "desc": ""
+  },
+  {
+    "name": "yaniv-files-app",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:00:57Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/yaniv-files-app",
+    "desc": ""
+  },
+  {
+    "name": "hakbaza",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:00:42Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/hakbaza",
+    "desc": ""
+  },
+  {
+    "name": "math-materials-website",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:00:36Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/math-materials-website",
+    "desc": "Math materials website - Complete learning platform for grades 7-9 and Bagrut"
+  },
+  {
+    "name": "kavit",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:00:36Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/kavit",
+    "desc": ""
+  },
+  {
+    "name": "sefer2",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:00:21Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/sefer2",
+    "desc": ""
+  },
+  {
+    "name": "mivhan-math",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-04T17:00:16Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/mivhan-math",
+    "desc": ""
+  },
+  {
+    "name": "ai-orchestrator-2026-01-14",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "private",
+    "updatedAt": "2026-02-04T16:59:43Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/ai-orchestrator-2026-01-14",
+    "desc": ""
+  },
+  {
+    "name": "auto-sync-hub",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "private",
+    "updatedAt": "2026-02-04T16:59:18Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/auto-sync-hub",
+    "desc": ""
+  },
+  {
+    "name": "btd",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-04T16:59:10Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/btd",
+    "desc": "🤖 בוטדי - קישור קצר"
+  },
+  {
+    "name": "botteddy",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-04T16:59:07Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/botteddy",
+    "desc": "🤖 בוט חכם אינטראקטיבי עבור חטיבת הביניים ע'ש טדי קולק בפסגת זאב - מדריך פסגת זאב השנון"
+  },
+  {
+    "name": "assistant-control-mobile",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-04T16:58:56Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/assistant-control-mobile",
+    "desc": ""
+  },
+  {
+    "name": "aaa",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-04T16:58:50Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/aaa",
+    "desc": "fdsfs"
+  },
+  {
+    "name": "math-worksheet-lab",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "private",
+    "updatedAt": "2026-02-04T16:58:35Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/math-worksheet-lab",
+    "desc": ""
+  },
+  {
+    "name": "math-worksheet",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-04T16:58:20Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/math-worksheet",
+    "desc": ""
+  },
+  {
+    "name": "math-tutor-app",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "private",
+    "updatedAt": "2026-02-04T16:58:19Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/math-tutor-app",
+    "desc": "Hebrew RTL Math Tutor Management App - Production-ready system with D1 database"
+  },
+  {
+    "name": "ai-control-hub-test",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-04T16:58:17Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/ai-control-hub-test",
+    "desc": "AI Control Hub - Test Repository for OpenAI + GitHub Integration"
+  },
+  {
+    "name": "yanivraz1",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-04T16:57:58Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/yanivraz1",
+    "desc": ""
+  },
+  {
+    "name": "math-worksheets",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-04T16:57:51Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/math-worksheets",
+    "desc": ""
+  },
+  {
+    "name": "yaniv-web",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-04T16:57:47Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/yaniv-web",
+    "desc": ""
+  },
+  {
+    "name": "ultra",
+    "tag": "ACTIVE",
+    "why": "Updated 10d ago",
+    "vis": "public",
+    "updatedAt": "2026-02-04T16:57:44Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/ultra",
+    "desc": ""
+  },
+  {
+    "name": "Yanivatar",
+    "tag": "ACTIVE",
+    "why": "Updated 27d ago",
+    "vis": "public",
+    "updatedAt": "2026-01-19T05:06:09Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/Yanivatar",
+    "desc": "שלום"
+  },
+  {
+    "name": "silavus",
+    "tag": "ACTIVE",
+    "why": "Updated 27d ago",
+    "vis": "public",
+    "updatedAt": "2026-01-19T05:06:07Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/silavus",
+    "desc": "silavus"
+  },
+  {
+    "name": "hishtalmut",
+    "tag": "ACTIVE",
+    "why": "Updated 27d ago",
+    "vis": "public",
+    "updatedAt": "2026-01-19T05:03:09Z",
+    "branch": "",
+    "url": "https://github.com/yanivmizrachiy/hishtalmut",
+    "desc": ""
+  },
+  {
+    "name": "homerh-math-worksheets",
+    "tag": "ACTIVE",
+    "why": "Updated 34d ago",
+    "vis": "public",
+    "updatedAt": "2026-01-11T23:28:39Z",
+    "branch": "main",
+    "url": "https://github.com/yanivmizrachiy/homerh-math-worksheets",
+    "desc": ""
+  }
+]

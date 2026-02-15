@@ -1,0 +1,12 @@
+# CLEANUP PLAN — ahuzim
+
+- Tag: CLEANUP
+- Why: Empty description (review)
+
+## שלבים מוצעים (שמרני)
+1) clone/pull מקומי (אם אין)
+2) יצירת move-list שמרני (דיווח בלבד)
+3) יצירת AUDIT דוחות (דיווח בלבד)
+4) החלטת TAG סופית (ACTIVE/ARCHIVE) על בסיס audit
+
+> מדיניות: NO DELETE. אם מפעילים ניקוי—MOVE ל-TRASH בלבד.

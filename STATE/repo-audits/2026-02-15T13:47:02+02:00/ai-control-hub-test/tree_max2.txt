@@ -1,0 +1,25 @@
+total 50
+drwx------.  5 u0_a476 u0_a476 3452 Feb 15 13:47 .
+drwx------. 61 u0_a476 u0_a476 8192 Feb 15 13:47 ..
+-rw-------.  1 u0_a476 u0_a476  854 Feb 15 13:47 .env.example
+drwx------.  7 u0_a476 u0_a476 3452 Feb 15 13:47 .git
+drwx------.  4 u0_a476 u0_a476 3452 Feb 15 13:47 .github
+-rw-------.  1 u0_a476 u0_a476   87 Feb 15 13:47 README.md
+-rw-------.  1 u0_a476 u0_a476 4027 Feb 15 13:47 SETUP.md
+-rw-------.  1 u0_a476 u0_a476  678 Feb 15 13:47 package.json
+drwx------.  2 u0_a476 u0_a476 3452 Feb 15 13:47 reports
+-rw-------.  1 u0_a476 u0_a476 4500 Feb 15 13:47 server.js
+-rw-------.  1 u0_a476 u0_a476 1059 Feb 15 13:47 test-results.json
+
+.git/description
+.git/config
+.git/HEAD
+.git/packed-refs
+.git/index
+.env.example
+README.md
+SETUP.md
+package.json
+reports/2026-01-15.md
+server.js
+test-results.json

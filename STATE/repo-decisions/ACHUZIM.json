@@ -1,0 +1,9 @@
+{
+  "repo": "ACHUZIM",
+  "final_tag": "ARCHIVE",
+  "move_list_count": 0,
+  "move_list_path": "STATE/repo-move-lists/2026-02-15T13:40:02+02:00/ACHUZIM__move-list.txt",
+  "audit_dir": "STATE/repo-audits/2026-02-15T13:40:02+02:00/ACHUZIM",
+  "ts": "2026-02-15T13:40:02+02:00",
+  "policy": "NO DELETE. If we apply cleanup: MOVE ONLY to TRASH."
+}

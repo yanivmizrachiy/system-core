@@ -1,0 +1,8 @@
+total 15
+drwx------.  3 u0_a476 u0_a476 3452 Feb 15 13:40 .
+drwx------. 59 u0_a476 u0_a476 8192 Feb 15 13:40 ..
+drwx------.  6 u0_a476 u0_a476 3452 Feb 15 13:40 .git
+
+.git/description
+.git/config
+.git/HEAD
