@@ -1,0 +1,496 @@
+{
+  "generated": "2026-02-15 12:02:26.359187+00:00",
+  "total": 61,
+  "repos": [
+    {
+      "name": "my-assistant",
+      "age_days": 0,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/my-assistant",
+      "category": "SAFE"
+    },
+    {
+      "name": "system-core",
+      "age_days": 0,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/system-core",
+      "category": "SAFE"
+    },
+    {
+      "name": "pdf-system",
+      "age_days": 0,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/pdf-system",
+      "category": "SAFE"
+    },
+    {
+      "name": "n8n",
+      "age_days": 0,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/n8n",
+      "category": "SAFE"
+    },
+    {
+      "name": "GPT",
+      "age_days": 0,
+      "risk": 0,
+      "description": "GPT math pages + rules (HTML/CSS separated)",
+      "url": "https://github.com/yanivmizrachiy/GPT",
+      "category": "SAFE"
+    },
+    {
+      "name": "termux",
+      "age_days": 0,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/termux",
+      "category": "SAFE"
+    },
+    {
+      "name": "digital-pdf-book",
+      "age_days": 1,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/digital-pdf-book",
+      "category": "SAFE"
+    },
+    {
+      "name": "studiomath",
+      "age_days": 2,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/studiomath",
+      "category": "SAFE"
+    },
+    {
+      "name": "myfunction",
+      "age_days": 2,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/myfunction",
+      "category": "SAFE"
+    },
+    {
+      "name": "atarbook",
+      "age_days": 3,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/atarbook",
+      "category": "SAFE"
+    },
+    {
+      "name": "maagar",
+      "age_days": 3,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/maagar",
+      "category": "SAFE"
+    },
+    {
+      "name": "ahuzim",
+      "age_days": 3,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/ahuzim",
+      "category": "SAFE"
+    },
+    {
+      "name": "ACHUZIM",
+      "age_days": 3,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/ACHUZIM",
+      "category": "SAFE"
+    },
+    {
+      "name": "rip11-2-26",
+      "age_days": 4,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/rip11-2-26",
+      "category": "SAFE"
+    },
+    {
+      "name": "luztedi",
+      "age_days": 4,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/luztedi",
+      "category": "SAFE"
+    },
+    {
+      "name": "sefer1",
+      "age_days": 5,
+      "risk": 0,
+      "description": "ספר מספר 1 ",
+      "url": "https://github.com/yanivmizrachiy/sefer1",
+      "category": "SAFE"
+    },
+    {
+      "name": "hey",
+      "age_days": 5,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/hey",
+      "category": "SAFE"
+    },
+    {
+      "name": "school-schedule",
+      "age_days": 5,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/school-schedule",
+      "category": "SAFE"
+    },
+    {
+      "name": "silav",
+      "age_days": 6,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/silav",
+      "category": "SAFE"
+    },
+    {
+      "name": "-",
+      "age_days": 6,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/-",
+      "category": "SAFE"
+    },
+    {
+      "name": "TALMID",
+      "age_days": 8,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/TALMID",
+      "category": "SAFE"
+    },
+    {
+      "name": "func",
+      "age_days": 8,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/func",
+      "category": "SAFE"
+    },
+    {
+      "name": "My-Automation-Logs",
+      "age_days": 10,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/My-Automation-Logs",
+      "category": "SAFE"
+    },
+    {
+      "name": "auto-sync-hub",
+      "age_days": 10,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/auto-sync-hub",
+      "category": "SAFE"
+    },
+    {
+      "name": "professional-math-development-jerusalem",
+      "age_days": 10,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/professional-math-development-jerusalem",
+      "category": "SAFE"
+    },
+    {
+      "name": "btd",
+      "age_days": 10,
+      "risk": 0,
+      "description": "🤖 בוטדי - קישור קצר",
+      "url": "https://github.com/yanivmizrachiy/btd",
+      "category": "SAFE"
+    },
+    {
+      "name": "botteddy",
+      "age_days": 10,
+      "risk": 0,
+      "description": "🤖 בוט חכם אינטראקטיבי עבור חטיבת הביניים ע'ש טדי קולק בפסגת זאב - מדריך פסגת זאב השנון",
+      "url": "https://github.com/yanivmizrachiy/botteddy",
+      "category": "SAFE"
+    },
+    {
+      "name": "geometry-ai-project",
+      "age_days": 10,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/geometry-ai-project",
+      "category": "SAFE"
+    },
+    {
+      "name": "hadracha2",
+      "age_days": 10,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/hadracha2",
+      "category": "SAFE"
+    },
+    {
+      "name": "hadracha",
+      "age_days": 10,
+      "risk": 0,
+      "description": "mnbm,",
+      "url": "https://github.com/yanivmizrachiy/hadracha",
+      "category": "SAFE"
+    },
+    {
+      "name": "tet1",
+      "age_days": 10,
+      "risk": 0,
+      "description": "hgg",
+      "url": "https://github.com/yanivmizrachiy/tet1",
+      "category": "SAFE"
+    },
+    {
+      "name": "aaa",
+      "age_days": 10,
+      "risk": 0,
+      "description": "fdsfs",
+      "url": "https://github.com/yanivmizrachiy/aaa",
+      "category": "SAFE"
+    },
+    {
+      "name": "mivhan-math",
+      "age_days": 10,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/mivhan-math",
+      "category": "SAFE"
+    },
+    {
+      "name": "bagrut-exam",
+      "age_days": 10,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/bagrut-exam",
+      "category": "SAFE"
+    },
+    {
+      "name": "math-worksheet-lab",
+      "age_days": 10,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/math-worksheet-lab",
+      "category": "SAFE"
+    },
+    {
+      "name": "math-worksheets-hub",
+      "age_days": 10,
+      "risk": 0,
+      "description": "🎓 מרכז מאוחד לדפי עבודה במתמטיקה - תבניות, כלי יצירה, ודפי תרגול לכיתות ז'-י\"ב | Unified Math Worksheets Hub",
+      "url": "https://github.com/yanivmizrachiy/math-worksheets-hub",
+      "category": "SAFE"
+    },
+    {
+      "name": "geometry-concepts-app",
+      "age_days": 10,
+      "risk": 0,
+      "description": "Geometry concepts educational app - מושגים בגיאומטריה",
+      "url": "https://github.com/yanivmizrachiy/geometry-concepts-app",
+      "category": "SAFE"
+    },
+    {
+      "name": "ai-worksheets-generator",
+      "age_days": 10,
+      "risk": 0,
+      "description": "AI-Powered Worksheet Generator with GitHub Copilot & Google AI Studio integration. Full permissions for automated worksheet creation, editing, and PDF export. | מחולל דפי עבודה מבוסס AI עם הרשאות מלאות",
+      "url": "https://github.com/yanivmizrachiy/ai-worksheets-generator",
+      "category": "SAFE"
+    },
+    {
+      "name": "math-worksheet",
+      "age_days": 10,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/math-worksheet",
+      "category": "SAFE"
+    },
+    {
+      "name": "ai-control-hub-test",
+      "age_days": 10,
+      "risk": 0,
+      "description": "AI Control Hub - Test Repository for OpenAI + GitHub Integration",
+      "url": "https://github.com/yanivmizrachiy/ai-control-hub-test",
+      "category": "SAFE"
+    },
+    {
+      "name": "14-1-26",
+      "age_days": 10,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/14-1-26",
+      "category": "SAFE"
+    },
+    {
+      "name": "ai-orchestrator-2026-01-14",
+      "age_days": 10,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/ai-orchestrator-2026-01-14",
+      "category": "SAFE"
+    },
+    {
+      "name": "projects-analysis-report",
+      "age_days": 10,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/projects-analysis-report",
+      "category": "SAFE"
+    },
+    {
+      "name": "math-tutor-app",
+      "age_days": 10,
+      "risk": 0,
+      "description": "Hebrew RTL Math Tutor Management App - Production-ready system with D1 database",
+      "url": "https://github.com/yanivmizrachiy/math-tutor-app",
+      "category": "SAFE"
+    },
+    {
+      "name": "yanivraz1",
+      "age_days": 10,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/yanivraz1",
+      "category": "SAFE"
+    },
+    {
+      "name": "yaniv-control-center",
+      "age_days": 10,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/yaniv-control-center",
+      "category": "SAFE"
+    },
+    {
+      "name": "yaniv-site",
+      "age_days": 10,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/yaniv-site",
+      "category": "SAFE"
+    },
+    {
+      "name": "yaniv-web",
+      "age_days": 10,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/yaniv-web",
+      "category": "SAFE"
+    },
+    {
+      "name": "ultra",
+      "age_days": 10,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/ultra",
+      "category": "SAFE"
+    },
+    {
+      "name": "math-worksheets",
+      "age_days": 10,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/math-worksheets",
+      "category": "SAFE"
+    },
+    {
+      "name": "hakbaza",
+      "age_days": 10,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/hakbaza",
+      "category": "SAFE"
+    },
+    {
+      "name": "math-materials-website",
+      "age_days": 10,
+      "risk": 0,
+      "description": "Math materials website - Complete learning platform for grades 7-9 and Bagrut",
+      "url": "https://github.com/yanivmizrachiy/math-materials-website",
+      "category": "SAFE"
+    },
+    {
+      "name": "student-management-system",
+      "age_days": 10,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/student-management-system",
+      "category": "SAFE"
+    },
+    {
+      "name": "sefer2",
+      "age_days": 10,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/sefer2",
+      "category": "SAFE"
+    },
+    {
+      "name": "kavit",
+      "age_days": 10,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/kavit",
+      "category": "SAFE"
+    },
+    {
+      "name": "assistant-control-mobile",
+      "age_days": 10,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/assistant-control-mobile",
+      "category": "SAFE"
+    },
+    {
+      "name": "yaniv-files-app",
+      "age_days": 10,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/yaniv-files-app",
+      "category": "SAFE"
+    },
+    {
+      "name": "homerh-math-worksheets",
+      "age_days": 34,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/homerh-math-worksheets",
+      "category": "SAFE"
+    },
+    {
+      "name": "silavus",
+      "age_days": 27,
+      "risk": 0,
+      "description": "silavus",
+      "url": "https://github.com/yanivmizrachiy/silavus",
+      "category": "SAFE"
+    },
+    {
+      "name": "hishtalmut",
+      "age_days": 27,
+      "risk": 1,
+      "description": "",
+      "url": "https://github.com/yanivmizrachiy/hishtalmut",
+      "category": "SAFE"
+    },
+    {
+      "name": "Yanivatar",
+      "age_days": 27,
+      "risk": 0,
+      "description": "שלום ",
+      "url": "https://github.com/yanivmizrachiy/Yanivatar",
+      "category": "SAFE"
+    }
+  ],
+  "duplicate_names": [],
+  "duplicate_descriptions": []
+}
