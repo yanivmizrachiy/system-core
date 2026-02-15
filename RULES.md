@@ -622,3 +622,10 @@ STATE/classification-2026-02-15T11:34:52+02:00.md
 **חסמים**
 - אין
 
+
+### GOVERNANCE (AUTO)
+- Runs recorded below.
+
+- 2026-02-15T14:28:43+02:00 | v3 recovery: dashboard rebuilt (hard-safe) | dir=STATE/governance-v3/2026-02-15T14:04:15+02:00
+  - status: repo-intelligence.json ✅ ; dashboard.md ✅ ; stderr_file=STATE/governance-v3/2026-02-15T14:04:15+02:00/dashboard_build.stderr.txt
+  - next: TURBO README-hash sampling (top-risk only, MAX=20) כדי לזהות כפילויות חכמות בלי RateLimit
