@@ -452,3 +452,20 @@ STATE/classification-2026-02-15T11:34:52+02:00.md
 **חסמים**
 - אין
 
+
+---
+
+## קטגוריה: CLEANUP
+
+### טופל ריפו CLEANUP הבא: homerh-math-worksheets — 2026-02-15T13:25:59+02:00
+[[CORE_LOG:2026-02-15|CLEANUP|טופל ריפו CLEANUP הבא: homerh-math-worksheets]]
+
+**מה בוצע**
+- נוצר move-list COUNT=0: /data/data/com.termux/files/home/system-core/STATE/repo-move-lists/2026-02-15T13:25:57+02:00/homerh-math-worksheets__move-list.txt ; נוצר AUDIT: STATE/repo-audits/2026-02-15T13:25:57+02:00/homerh-math-worksheets ; נקבע TAG=ACTIVE ונשמר: /data/data/com.termux/files/home/system-core/STATE/repo-decisions/homerh-math-worksheets.json
+
+**מה הבא**
+- הבא: לעבור לריפו CLEANUP הבא (תריץ שוב אותה פקודה)
+
+**חסמים**
+- אין
+
