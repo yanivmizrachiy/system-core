@@ -92,3 +92,20 @@ STATE/cleanup-plan-2026-02-15T11:34:08+02:00.md
 STATE/classification-2026-02-15T11:34:52+02:00.md
 
 סטטוס: מוכן לשלב ארכוב ומחיקה מבוקרת.
+
+---
+
+## קטגוריה: SYSTEM
+
+### שחזור יציב של core-log/core-status — 2026-02-15T11:41:16+02:00
+[[CORE_LOG:2026-02-15|SYSTEM|שחזור יציב של core-log/core-status]]
+
+**מה בוצע**
+- נבנו מחדש הסקריפטים בלי heredoc/awk; נפתרה בעיית /SCRIPTS; נוצר snapshot
+
+**מה הבא**
+- להתחיל קליטת סיכומים לתוך INBOX + לקבוע ריפו יעד ל-remote של system-core
+
+**חסמים**
+- אין
+
