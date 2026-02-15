@@ -1,0 +1,9 @@
+output
+output/_make.run.log
+output/_smoke.log
+output/_smoke.run.log
+output/_tlmgr_bidi.log
+output/_tlmgr_fix_20260215-143235.log
+output/_tlmgr_setspace.log
+output/base.log
+output/last_build.log

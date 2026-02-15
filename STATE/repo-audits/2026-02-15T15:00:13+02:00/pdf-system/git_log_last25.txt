@@ -1,0 +1,4 @@
+144bfb6 fix: install setspace + smoke passes + document
+da4b80d fix: wire pre-push hook + document today (GOV3 ready)
+ffa7deb governance: add GOV3 diff guard + journal enforcement
+52e35d0 Initial commit: pdf-system (TeX + automation core)

@@ -1,0 +1,17 @@
+c395cd8 chore(termux): sync (journal enforced)
+2786343 chore: auto update changelog + status
+70a9228 chore(termux): sync (journal enforced)
+524da17 chore: auto update changelog + status
+c868261 governance: enforce daily journal before push (termux)
+a3c6010 chore: auto update changelog + status
+91bc760 final hook verification
+f4de036 test: hook verification
+c28f15b chore: auto update changelog + status
+a17719c ci: enforce RULES and CHANGELOG structure
+076f9af chore: auto update changelog + status
+d19cc38 chore: local sync verification (windows)
+72ef029 chore: integrations foundation (google/openai/termux + checks)
+7565657 chore: auto update changelog + status
+ad020f2 chore: extreme governance hardening (rules+ci+status)
+3bfc658 chore: auto update changelog + status
+87d45e8 chore: bootstrap governance for n8n repo

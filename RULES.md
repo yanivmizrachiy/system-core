@@ -661,3 +661,48 @@ STATE/classification-2026-02-15T11:34:52+02:00.md
 **חסמים**
 - אין
 
+
+- 2026-02-15T15:00:13+02:00 | cleanup-plan+decision (auto): repo=n8n
+  - TAG=ACTIVE ; move-list COUNT=0 ; move-list=STATE/repo-move-lists/2026-02-15T15:00:13+02:00/n8n__move-list.txt
+  - audit=STATE/repo-audits/2026-02-15T15:00:13+02:00/n8n ; decision=STATE/repo-decisions/n8n.json
+  - policy: NO DELETE (MOVE ONLY to TRASH when applying cleanup).
+
+- 2026-02-15T15:00:13+02:00 | cleanup-plan+decision (auto): repo=pdf-system
+  - TAG=ACTIVE ; move-list COUNT=9 ; move-list=STATE/repo-move-lists/2026-02-15T15:00:13+02:00/pdf-system__move-list.txt
+  - audit=STATE/repo-audits/2026-02-15T15:00:13+02:00/pdf-system ; decision=STATE/repo-decisions/pdf-system.json
+  - policy: NO DELETE (MOVE ONLY to TRASH when applying cleanup).
+
+- 2026-02-15T15:00:13+02:00 | cleanup-plan+decision (auto): repo=homerh-math-worksheets
+  - TAG=ACTIVE ; move-list COUNT=0 ; move-list=STATE/repo-move-lists/2026-02-15T15:00:13+02:00/homerh-math-worksheets__move-list.txt
+  - audit=STATE/repo-audits/2026-02-15T15:00:13+02:00/homerh-math-worksheets ; decision=STATE/repo-decisions/homerh-math-worksheets.json
+  - policy: NO DELETE (MOVE ONLY to TRASH when applying cleanup).
+
+- 2026-02-15T15:00:13+02:00 | cleanup-plan+decision (auto): repo=14-1-26
+  - TAG=ACTIVE ; move-list COUNT=0 ; move-list=STATE/repo-move-lists/2026-02-15T15:00:13+02:00/14-1-26__move-list.txt
+  - audit=STATE/repo-audits/2026-02-15T15:00:13+02:00/14-1-26 ; decision=STATE/repo-decisions/14-1-26.json
+  - policy: NO DELETE (MOVE ONLY to TRASH when applying cleanup).
+
+- 2026-02-15T15:00:13+02:00 | cleanup-plan+decision (auto): repo=assistant-control-mobile
+  - TAG=ACTIVE ; move-list COUNT=0 ; move-list=STATE/repo-move-lists/2026-02-15T15:00:13+02:00/assistant-control-mobile__move-list.txt
+  - audit=STATE/repo-audits/2026-02-15T15:00:13+02:00/assistant-control-mobile ; decision=STATE/repo-decisions/assistant-control-mobile.json
+  - policy: NO DELETE (MOVE ONLY to TRASH when applying cleanup).
+
+- 2026-02-15T15:07:20+02:00 | NOOP-CLEAN (COUNT=0): repo=14-1-26
+  - move-list=STATE/repo-move-lists/2026-02-15T15:00:13+02:00/14-1-26__move-list.txt
+  - audit=STATE/repo-audits/2026-02-15T15:00:13+02:00/14-1-26/noop_clean.txt
+  - policy: NO DELETE (nothing to move).
+
+- 2026-02-15T15:07:20+02:00 | NOOP-CLEAN (COUNT=0): repo=assistant-control-mobile
+  - move-list=STATE/repo-move-lists/2026-02-15T15:00:13+02:00/assistant-control-mobile__move-list.txt
+  - audit=STATE/repo-audits/2026-02-15T15:00:13+02:00/assistant-control-mobile/noop_clean.txt
+  - policy: NO DELETE (nothing to move).
+
+- 2026-02-15T15:07:20+02:00 | NOOP-CLEAN (COUNT=0): repo=homerh-math-worksheets
+  - move-list=STATE/repo-move-lists/2026-02-15T15:00:13+02:00/homerh-math-worksheets__move-list.txt
+  - audit=STATE/repo-audits/2026-02-15T15:00:13+02:00/homerh-math-worksheets/noop_clean.txt
+  - policy: NO DELETE (nothing to move).
+
+- 2026-02-15T15:07:20+02:00 | NOOP-CLEAN (COUNT=0): repo=n8n
+  - move-list=STATE/repo-move-lists/2026-02-15T15:00:13+02:00/n8n__move-list.txt
+  - audit=STATE/repo-audits/2026-02-15T15:00:13+02:00/n8n/noop_clean.txt
+  - policy: NO DELETE (nothing to move).
