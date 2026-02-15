@@ -29,7 +29,7 @@ def parse_next_link(link_hdr: str):
         return None
     parts = [p.strip() for p in link_hdr.split(",")]
     for p in parts:
-        if rel=next in p:
+        if rel_next in p:
             left = p.split(";")[0].strip()
             if left.startswith("<") and left.endswith(">"):
                 return left[1:-1]
