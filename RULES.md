@@ -143,3 +143,20 @@ STATE/classification-2026-02-15T11:34:52+02:00.md
 **חסמים**
 - אין
 
+
+---
+
+## קטגוריה: SYSTEM
+
+### התקנת INBOX/INDEX/TRASH כלים — 2026-02-15T11:44:04+02:00
+[[CORE_LOG:2026-02-15|SYSTEM|התקנת INBOX/INDEX/TRASH כלים]]
+
+**מה בוצע**
+- נוספו: inbox-add.sh, inbox-index.sh, trash-move.sh; נוצרו תיקיות INBOX/TRASH
+
+**מה הבא**
+- להתחיל לקלוט 3 סיכומים ראשונים ל-INBOX ואז לייצר index
+
+**חסמים**
+- אין
+
