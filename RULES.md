@@ -644,3 +644,20 @@ STATE/classification-2026-02-15T11:34:52+02:00.md
   - TAG=ACTIVE ; move-list COUNT=0 ; move-list=STATE/repo-move-lists/2026-02-15T13:47:02+02:00/ai-control-hub-test__move-list.txt
   - audit=STATE/repo-audits/2026-02-15T14:55:14+02:00/ai-control-hub-test ; decision=STATE/repo-decisions/ai-control-hub-test.json
   - policy: NO DELETE (MOVE ONLY to TRASH when applying cleanup).
+
+---
+
+## קטגוריה: CLEANUP
+
+### DECISION+AUGMENT (auto): ai-control-hub-test — 2026-02-15T14:55:17+02:00
+[[CORE_LOG:2026-02-15|CLEANUP|DECISION+AUGMENT (auto): ai-control-hub-test]]
+
+**מה בוצע**
+- TAG=ACTIVE ; COUNT=0 ; move-list=STATE/repo-move-lists/2026-02-15T13:47:02+02:00/ai-control-hub-test__move-list.txt ; audit=STATE/repo-audits/2026-02-15T14:55:14+02:00/ai-control-hub-test ; decision=STATE/repo-decisions/ai-control-hub-test.json
+
+**מה הבא**
+- הבא: לבחור APPLY על בסיס decision/move-list
+
+**חסמים**
+- אין
+
