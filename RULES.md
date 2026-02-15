@@ -520,3 +520,20 @@ STATE/classification-2026-02-15T11:34:52+02:00.md
 **חסמים**
 - אין
 
+
+---
+
+## קטגוריה: CLEANUP
+
+### CLEANUP DONE: 14-1-26 — 2026-02-15T13:37:32+02:00
+[[CORE_LOG:2026-02-15|CLEANUP|CLEANUP DONE: 14-1-26]]
+
+**מה בוצע**
+- PLAN הועבר ל-DONE; decision_created=NO; TAG=ACTIVE; MOVE_LIST=STATE/repo-move-lists/2026-02-15T13:35:34+02:00/14-1-26__move-list.txt; AUDIT_DIR=STATE/repo-audits/2026-02-15T13:35:34+02:00/14-1-26; DEC=STATE/repo-decisions/14-1-26.json
+
+**מה הבא**
+- הבא: להריץ cycle על הריפו הבא ב-plans (אני אכוון)
+
+**חסמים**
+- אין
+
