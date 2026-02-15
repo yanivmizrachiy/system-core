@@ -126,3 +126,20 @@ STATE/classification-2026-02-15T11:34:52+02:00.md
 **חסמים**
 - אם אין remote ל-system-core: נחבר לריפו יעד
 
+
+---
+
+## קטגוריה: SYSTEM
+
+### חיבור system-core ל-GitHub + push — 2026-02-15T11:42:42+02:00
+[[CORE_LOG:2026-02-15|SYSTEM|חיבור system-core ל-GitHub + push]]
+
+**מה בוצע**
+- אומת ריפו מקומי; נוצר/אומת ריפו yanivmizrachiy/system-core; הוגדר origin; בוצע push ל-main
+
+**מה הבא**
+- להתחיל קליטת סיכומים ל-INBOX + להכין ניקוי כפילויות (move בלבד ל-TRASH)
+
+**חסמים**
+- אין
+
