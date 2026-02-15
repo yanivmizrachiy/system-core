@@ -503,3 +503,20 @@ STATE/classification-2026-02-15T11:34:52+02:00.md
 **חסמים**
 - אין
 
+
+---
+
+## קטגוריה: CLEANUP
+
+### CLEANUP cycle: 14-1-26 — 2026-02-15T13:35:35+02:00
+[[CORE_LOG:2026-02-15|CLEANUP|CLEANUP cycle: 14-1-26]]
+
+**מה בוצע**
+- move-list COUNT=0: /data/data/com.termux/files/home/system-core/STATE/repo-move-lists/2026-02-15T13:35:34+02:00/14-1-26__move-list.txt ; AUDIT: STATE/repo-audits/2026-02-15T13:35:34+02:00/14-1-26 ; TAG=ACTIVE ; DEC: /data/data/com.termux/files/home/system-core/STATE/repo-decisions/14-1-26.json
+
+**מה הבא**
+- הבא: להריץ שוב כדי לטפל בריפו הבא (או להפיק apply-move אם CNT>0)
+
+**חסמים**
+- אין
+
