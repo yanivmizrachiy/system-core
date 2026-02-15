@@ -1,0 +1,7 @@
+{
+  "generated": "2026-02-15T16:12:33.522217+00:00",
+  "owner": "yanivmizrachiy",
+  "total": 0,
+  "repos": [],
+  "error": "Command '['gh', 'api', '/user/repos', '--paginate', '--jq', '.[]']' returned non-zero exit status 1."
+}
