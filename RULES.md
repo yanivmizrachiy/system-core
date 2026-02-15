@@ -712,3 +712,7 @@ STATE/classification-2026-02-15T11:34:52+02:00.md
   - added: .github/workflows/governance_v4_auto.yml (schedule + manual)
   - policy: NO DELETE (MOVE ONLY to TRASH when applying cleanup).
   - next: set repo secret GH_PAT in system-core (needed for private repos in Actions).
+
+- 2026-02-15T15:51:59+02:00 | GH_PAT secret set automatically (source: gh auth token)
+  - effect: Actions can read private repos for governance runs
+  - next: workflow governance v4 auto triggered now
