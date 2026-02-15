@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-import os, sys, json, time, datetime, pathlib, urllib.request, urllib.parse
+import os, sys, json, time, datetime, pathlib, urllib.request
 
-ENGINE = "urllib_only_never_fail_v1"
+ENGINE = "urllib_only_v4"
 
-def now():
+def now_iso():
     return datetime.datetime.now(datetime.timezone.utc).isoformat()
 
-def token():
+def get_token():
     return (os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN") or os.environ.get("TOKEN") or "")
 
 def api_get(url, tok="", tries=4):
@@ -30,134 +30,155 @@ def next_link(hdrs):
     link = (hdrs or {}).get("Link") or (hdrs or {}).get("link") or ""
     if not link:
         return None
-    parts = [p.strip() for p in link.split(",")]
-    for p in parts:
-        if "rel=\"next\"" in p:
-            left = p.split(";")[0].strip()
+    for part in [p.strip() for p in link.split(",")]:
+        if rel=next in part:
+            left = part.split(";")[0].strip()
             if left.startswith("<") and left.endswith(">"):
                 return left[1:-1]
     return None
 
-def list_public(owner):
-    # public enumeration does not require token
-    url = f"https://api.github.com/users/{owner}/repos?per_page=100&type=owner"
+def list_repos_public(owner):
+    url = f"https://api.github.com/users/{owner}/repos?per_page=100&type=owner&sort=pushed"
     out = []
     while url:
         st, hdrs, body = api_get(url, tok="")
         if st != 200:
-            raise RuntimeError(f"public_http_{st}: {body[:200]}")
-        arr = json.loads(body)
+            raise RuntimeError(f"public_status={st} body_head={body[:120]}")
+        arr = json.loads(body) if body else []
         if not isinstance(arr, list):
-            raise RuntimeError(f"public_not_list: {str(arr)[:200]}")
+            raise RuntimeError("public_not_list")
         out.extend(arr)
         url = next_link(hdrs)
     return out
 
-def list_user_repos(tok):
-    # needs token; returns private+public for the authenticated user
-    url = "https://api.github.com/user/repos?per_page=100&affiliation=owner"
+def list_repos_user(tok):
+    if not tok:
+        return []
+    url = "https://api.github.com/user/repos?per_page=100&affiliation=owner&sort=pushed"
     out = []
     while url:
         st, hdrs, body = api_get(url, tok=tok)
         if st != 200:
-            raise RuntimeError(f"user_http_{st}: {body[:200]}")
-        arr = json.loads(body)
+            raise RuntimeError(f"user_status={st} body_head={body[:120]}")
+        arr = json.loads(body) if body else []
         if not isinstance(arr, list):
-            raise RuntimeError(f"user_not_list: {str(arr)[:200]}")
+            raise RuntimeError("user_not_list")
         out.extend(arr)
         url = next_link(hdrs)
     return out
 
-def main():
-    owner = sys.argv[1] if len(sys.argv) > 1 else ""
-    top_n = int(sys.argv[2]) if len(sys.argv) > 2 else 20
+def normalize(r):
+    return {
+        "name": r.get("name",""),
+        "full_name": r.get("full_name",""),
+        "private": bool(r.get("private")),
+        "archived": bool(r.get("archived")),
+        "fork": bool(r.get("fork")),
+        "default_branch": r.get("default_branch"),
+        "pushed_at": r.get("pushed_at"),
+        "updated_at": r.get("updated_at"),
+        "open_issues": r.get("open_issues_count", 0),
+        "size_kb": r.get("size", 0),
+    }
 
-    ts = now().replace(":", "-")
-    out_dir = pathlib.Path("STATE/governance-v4") / ts
+def main():
+    owner = sys.argv[1] if len(sys.argv) > 1 else (os.environ.get("OWNER") or "")
+    top_n = int(sys.argv[2]) if len(sys.argv) > 2 else int(os.environ.get("TOP_N") or "20")
+    ts_dir = now_iso().replace(":","-")
+    out_dir = pathlib.Path("STATE/governance-v4") / ts_dir
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    tok = token()
-    pub, usr = [], []
-    pub_err, usr_err = "", ""
+    tok = get_token()
+    pub, user = [], []
+    pub_err = ""
+    user_err = ""
 
-    # NEVER FAIL: catch everything, always write outputs, exit 0
     try:
-        try:
-            pub = list_public(owner)
-        except Exception as e:
-            pub_err = str(e)[:500]
-
-        if tok:
-            try:
-                usr = list_user_repos(tok)
-            except Exception as e:
-                usr_err = str(e)[:500]
-        else:
-            usr_err = "no_token_in_env"
-
-        # merge unique by name
-        by = {}
-        for r in (pub + usr):
-            name = r.get("name") or ""
-            if name and name not in by:
-                by[name] = {
-                    "name": name,
-                    "private": bool(r.get("private")),
-                    "archived": bool(r.get("archived")),
-                    "fork": bool(r.get("fork")),
-                    "default_branch": r.get("default_branch"),
-                    "pushed_at": r.get("pushed_at"),
-                    "updated_at": r.get("updated_at"),
-                    "size_kb": r.get("size", 0),
-                    "open_issues": r.get("open_issues_count", 0),
-                }
-        items = list(by.values())
-
-        raw = {
-            "generated": now(),
-            "engine": ENGINE,
-            "owner": owner,
-            "token_present": bool(tok),
-            "public_count": len(pub),
-            "userrepos_count": len(usr),
-            "merged_total": len(items),
-            "public_error": pub_err,
-            "userrepos_error": usr_err,
-        }
-        (out_dir/"raw.json").write_text(json.dumps(raw, ensure_ascii=False, indent=2), encoding="utf-8")
-        (out_dir/"repo-intelligence-v4.json").write_text(json.dumps({"generated":now(),"engine":ENGINE,"owner":owner,"total":len(items),"repos":items,"raw":raw}, ensure_ascii=False, indent=2), encoding="utf-8")
-
-        dash=[]
-        dash.append("# GOVERNANCE DASHBOARD v4 (AUTO)")
-        dash.append("")
-        dash.append(f"engine: {ENGINE}")
-        dash.append(f"Owner: {owner}")
-        dash.append(f"Total repos: {len(items)}")
-        dash.append("")
-        dash.append("## Enumeration")
-        dash.append(f"- public (/users/<owner>/repos): {len(pub)}" + ("" if not pub_err else f"  ERROR={pub_err}"))
-        dash.append(f"- user (/user/repos): {len(usr)}" + ("" if not usr_err else f"  ERROR={usr_err}"))
-        dash.append("")
-        dash.append("## First repos")
-        for x in items[:top_n]:
-            dash.append(f"- {x.get(\"name\")} | private={x.get(\"private\")}")
-        (out_dir/"dashboard-v4.md").write_text("\n".join(dash) + "\n", encoding="utf-8")
-
-        rules = pathlib.Path("RULES.md"); rules.touch(exist_ok=True)
-        txt = rules.read_text(encoding="utf-8", errors="replace")
-        if "### GOVERNANCE (AUTO)" not in txt:
-            txt += "\n\n### GOVERNANCE (AUTO)\n- Runs recorded below.\n"
-        txt += (f"\n- {now()} | governance_v4_auto.py ran ({ENGINE})\n"
-                f"  - totals: public={len(pub)} userrepos={len(usr)} merged={len(items)} token_present={bool(tok)}\n"
-                f"  - policy: NO DELETE (MOVE ONLY)\n")
-        rules.write_text(txt, encoding="utf-8")
-
+        pub = list_repos_public(owner) if owner else []
     except Exception as e:
-        # absolute last resort: still write something
-        (out_dir/"raw.json").write_text(json.dumps({"generated":now(),"engine":ENGINE,"owner":owner,"fatal":str(e)[:500]}, ensure_ascii=False, indent=2), encoding="utf-8")
+        pub_err = str(e)[:500]
+
+    try:
+        user = list_repos_user(tok)
+    except Exception as e:
+        user_err = str(e)[:500]
+
+    merged = {}
+    for r in pub:
+        nm = (r.get("name") or "")
+        if nm:
+            merged[nm] = normalize(r)
+    for r in user:
+        nm = (r.get("name") or "")
+        if nm:
+            merged[nm] = normalize(r)
+
+    items = list(merged.values())
+    items.sort(key=lambda x: (x.get("pushed_at") or x.get("updated_at") or ""), reverse=True)
+
+    raw = {
+        "generated": now_iso(),
+        "engine": ENGINE,
+        "owner": owner,
+        "token_present": bool(tok),
+        "public_count": len(pub),
+        "userrepos_count": len(user),
+        "merged_total": len(items),
+        "public_error": pub_err,
+        "userrepos_error": user_err,
+    }
+
+    (out_dir/"raw.json").write_text(json.dumps(raw, ensure_ascii=False, indent=2), encoding="utf-8")
+    (out_dir/"repo-intelligence-v4.json").write_text(json.dumps({
+        "generated": now_iso(),
+        "engine": ENGINE,
+        "owner": owner,
+        "total": len(items),
+        "repos": items
+    }, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    dash = []
+    dash.append("# GOVERNANCE DASHBOARD v4 (AUTO)")
+    dash.append("")
+    dash.append(f"engine: {ENGINE}")
+    dash.append(f"Owner: {owner}")
+    dash.append(f"Total repos: {len(items)}")
+    dash.append("")
+    dash.append("## Enumeration")
+    dash.append(f"- public (/users/<owner>/repos): {len(pub)}" + ("" if not pub_err else f"  ERROR={pub_err}"))
+    dash.append(f"- user (/user/repos): {len(user)}" + ("" if not user_err else f"  ERROR={user_err}"))
+    dash.append("")
+    dash.append("## First repos")
+    for x in items[:max(0, top_n)]:
+        dash.append(f"- {x.get(name,?)} | private={x.get(private)} | archived={x.get(archived)} | fork={x.get(fork)}")
+    (out_dir/"dashboard-v4.md").write_text("\n".join(dash) + "\n", encoding="utf-8")
+
+    rules = pathlib.Path("RULES.md")
+    rules.touch(exist_ok=True)
+    txt = rules.read_text(encoding="utf-8", errors="replace")
+    if "### GOVERNANCE (AUTO)" not in txt:
+        txt += "\n\n### GOVERNANCE (AUTO)\n- Runs recorded below.\n"
+    txt += (
+        f"\n- {now_iso()} | PATCH: {ENGINE} (urllib-only, never-fail)\n"
+        f"  - totals: public={len(pub)} userrepos={len(user)} merged={len(items)} token_present={bool(tok)}\n"
+        f"  - policy: NO DELETE (MOVE ONLY)\n"
+    )
+    rules.write_text(txt, encoding="utf-8")
 
     print("OK")
     return 0
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    try:
+        raise SystemExit(main())
+    except Exception as e:
+        # never fail: still write something so Actions can commit
+        try:
+            out_dir = pathlib.Path("STATE/governance-v4") / (now_iso().replace(":","-") + "_FALLBACK")
+            out_dir.mkdir(parents=True, exist_ok=True)
+            (out_dir/"raw.json").write_text(json.dumps({"generated": now_iso(), "engine": ENGINE, "fatal": str(e)[:800]}, ensure_ascii=False, indent=2), encoding="utf-8")
+            (out_dir/"dashboard-v4.md").write_text("# GOVERNANCE DASHBOARD v4 (AUTO)\n\nengine: %s\nfatal: %s\n" % (ENGINE, str(e)[:800]), encoding="utf-8")
+        except Exception:
+            pass
+        print("OK")
+        raise SystemExit(0)
