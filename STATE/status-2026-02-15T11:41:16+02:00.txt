@@ -1,0 +1,21 @@
+____ SYSTEM-CORE STATUS ____
+Timestamp: 2026-02-15T11:41:16+02:00
+
+-- git remotes --
+
+-- git branch --
+main
+
+-- git log (last 5) --
+4d7774f CLASSIFICATION REPORT 2026-02-15T11:34:52+02:00
+93ac56e CLEANUP ANALYSIS 2026-02-15T11:34:08+02:00
+0e68cf0 CORE UPDATE 2026-02-15T11:28:33+02:00
+bead626 RULES UPDATE – system audit documented 2026-02-15T11:28:33+02:00
+cbf99a1 SYSTEM CORE INITIALIZED 2026-02-15T11:14:23+02:00
+
+-- git status --
+## main
+?? SCRIPTS/core-log.sh
+?? SCRIPTS/core-status.sh
+?? SCRIPTS/safe-clean.sh
+?? STATE/status-2026-02-15T11:41:16+02:00.txt
