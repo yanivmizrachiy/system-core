@@ -1,0 +1,32 @@
+name: governance apply move-only
+on:
+  workflow_dispatch:
+    inputs:
+      top_n:
+        default: "20"
+      max_apply:
+        default: "3"
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    env:
+      OWNER: yanivmizrachiy
+      TOP_N: ${{ inputs.top_n || 20 }}
+      MAX_APPLY: ${{ inputs.max_apply || 3 }}
+      GH_TOKEN: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: |
+          python scripts/apply_move_only_from_system_core.py "$OWNER" "$TOP_N" "$MAX_APPLY"
+      - run: |
+          git add -A
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name "yaniv-bot"
+          git config user.email "yaniv-bot@users.noreply.github.com"
+          git commit -m "governance: apply move-only"
+          git push
