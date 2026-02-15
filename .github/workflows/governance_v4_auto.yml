@@ -37,6 +37,11 @@ jobs:
             echo "❌ Missing token (GH_PAT or GITHUB_TOKEN)"; exit 2
           fi
 
+      - name: Sanity: whoami via GH_TOKEN
+        run: |
+          echo "token_present=${GH_TOKEN:+yes}${GH_TOKEN:-no}"
+          python -c "import os; print(\"ENV_HAS_TOKEN=\", bool(os.environ.get(\"GH_TOKEN\")))"
+
       - name: Run governance v4 auto
         run: |
           python scripts/governance_v4_auto.py "${OWNER}" "${TOP_N}"
