@@ -24,3 +24,6 @@
 - 2026-02-15T19:49:26+02:00 | PATCH: engine=urllib_only_never_fail_v1 (Actions will commit STATE even on API errors)
   - expected: Total repos becomes real OR errors become real (not stale)
   - policy: NO DELETE (MOVE ONLY)
+
+- 2026-02-15T19:52:36+02:00 | PATCH: workflow governance_v4_auto.yml rewritten (no token-fail sanity; python-only)
+  - expected: STATE/governance-v4 will always be committed when script writes outputs

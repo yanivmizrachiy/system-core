@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       top_n:
-        description: "How many repos to show in dashboard"
+        description: "How many repos to list in dashboard (top)"
         required: false
         default: "20"
 
@@ -15,9 +15,11 @@ jobs:
   run:
     runs-on: ubuntu-latest
     env:
-      OWNER: yanivmizrachiy
+      OWNER: ${{ github.repository_owner }}
       TOP_N: ${{ inputs.top_n || 20 }}
+      # allow empty; script handles no_token case and still writes outputs
       GH_TOKEN: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+
     steps:
       - name: Checkout system-core
         uses: actions/checkout@v4
@@ -26,16 +28,6 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-
-      - name: Sanity
-        run: |
-          python -V
-          echo "OWNER=${OWNER} TOP_N=${TOP_N}"
-          if [ -z "${GH_TOKEN}" ]; then
-            echo "❌ Missing token (GH_PAT or GITHUB_TOKEN)"
-            exit 2
-          fi
-          echo "token_present=yes"
 
       - name: Run governance v4 auto
         run: |
