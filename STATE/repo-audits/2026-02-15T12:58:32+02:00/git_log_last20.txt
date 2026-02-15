@@ -1,0 +1,20 @@
+3c52d95 Extreme: Add bonus questions to slope table - complete 7 bonus questions total
+2741881 Extreme: Complete bonus questions for all worksheets - 7 bonus questions total
+5f211c9 Update: Progress report with bonus questions and new graph
+b93f35b Extreme improvements: Add bonus questions to all worksheets + create linear function graph
+1a49433 Add: Progress report - current work status and achievements
+014c507 Add: Complete solution key for worksheets 1-2, partial for 50 questions - professional answer guide
+8b7c775 Add: Extreme work plan for system improvements - comprehensive roadmap
+02cc95b Fix: Add professional, detailed instructions to all worksheets - replace demo text with real pedagogical content
+bf889c4 Fix: Remove duplicate H1 titles, improve build script, verify all content
+7ab6642 Add final status report
+ec2a10c Final fix: correct image paths in all files for GitHub Pages
+352e92f Fix image path in build_preview.py - correct relative path for GitHub Pages
+734f866 Add display audit documentation
+0647e06 Fix image path for GitHub Pages - use correct relative path from preview_pages
+31693fc Fix image paths for GitHub Pages display
+358fc66 Add mathematical review documentation
+7022b34 Final fix: add hints for negative coefficients in battery questions
+3f05c6c Fix mathematical errors: negative coefficients, improve question clarity for Grade 8
+b4204e9 Rebuild all_worksheets.html with simple CSS
+b1c4ca0 Fix CSS - remove flex and overflow hidden to show content

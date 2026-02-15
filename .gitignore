@@ -1,0 +1,46 @@
+
+### SYSTEM-CORE AUTOIGNORE (safe, no deletes)
+# temp/editor
+*.swp
+*~
+*.tmp
+*.bak
+*.patch
+issue.patch
+
+# OS noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# local env/tooling (should never be tracked)
+.cargo/
+.jupyter/
+.local/
+.npm/
+.termux/
+.tmp_school-schedule/
+backups/
+tasks/
+termux/
+GPT/
+_gptx_one_shot/
+
+# assistant scratch (your .ah_* files)
+.ah_*
+.ahuzim_*
+
+# avoid accidental parent paths display in status when working in subfolders
+../.cargo/
+../.jupyter/
+../.local/
+../.npm/
+../.termux/
+../backups/
+../tasks/
+../termux/
+../GPT/
+../_gptx_one_shot/
+../.ah_*
+../.ahuzim_*
+../.shortcuts/

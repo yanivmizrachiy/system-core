@@ -5,6 +5,9 @@ set +H 2>/dev/null || true
 CORE="$HOME/system-core"
 cd "$CORE"
 
+# ensure RULES permanent sections exist
+"$CORE/SCRIPTS/rules-ensure.sh" >/dev/null 2>&1 || true
+
 TITLE="${1:-SYNC}"
 DID="${2:-רענון אינדקס + סטטוס + commit/push}"
 NEXT="${3:-להמשיך קליטת סיכומים/ניקוי כפילויות}"

@@ -1,0 +1,83 @@
+total 241
+drwx------.  8 u0_a476 u0_a476  3452 Feb 15 12:57 .
+drwx------. 57 u0_a476 u0_a476  8192 Feb 15 12:57 ..
+-rw-------.  1 u0_a476 u0_a476  9356 Feb 15 12:57 .cursorrules
+drwx------.  7 u0_a476 u0_a476  3452 Feb 15 12:58 .git
+-rw-------.  1 u0_a476 u0_a476   775 Feb 15 12:57 .gitignore
+-rw-------.  1 u0_a476 u0_a476  2404 Feb 15 12:57 DEPLOY.md
+-rw-------.  1 u0_a476 u0_a476  1825 Feb 15 12:57 DISPLAY_AUDIT.md
+-rw-------.  1 u0_a476 u0_a476  1584 Feb 15 12:57 DISPLAY_CHECK.md
+-rw-------.  1 u0_a476 u0_a476  5863 Feb 15 12:57 EXTREME_PROMPT.md
+-rw-------.  1 u0_a476 u0_a476  2174 Feb 15 12:57 FINAL_DISPLAY_STATUS.md
+-rw-------.  1 u0_a476 u0_a476  1053 Feb 15 12:57 FINAL_LINK.txt
+-rw-------.  1 u0_a476 u0_a476  2019 Feb 15 12:57 FINAL_STATUS.md
+-rw-------.  1 u0_a476 u0_a476   907 Feb 15 12:57 LINK.txt
+-rw-------.  1 u0_a476 u0_a476  3242 Feb 15 12:57 MATHEMATICAL_REVIEW.md
+-rw-------.  1 u0_a476 u0_a476   737 Feb 15 12:57 NETLIFY_DEPLOY.md
+-rw-------.  1 u0_a476 u0_a476  3356 Feb 15 12:57 PROGRESS_REPORT.md
+-rw-------.  1 u0_a476 u0_a476  1273 Feb 15 12:57 PUBLISHED.md
+-rw-------.  1 u0_a476 u0_a476  1332 Feb 15 12:57 QUICK_DEPLOY.md
+-rw-------.  1 u0_a476 u0_a476  4256 Feb 15 12:57 README.md
+-rw-------.  1 u0_a476 u0_a476 13116 Feb 15 12:57 SOLUTION_KEY.md
+-rw-------.  1 u0_a476 u0_a476   989 Feb 15 12:57 THE_LINK.md
+-rw-------.  1 u0_a476 u0_a476 10627 Feb 15 12:57 WORK_PLAN_EXTREME_IMPROVEMENTS.md
+-rw-------.  1 u0_a476 u0_a476    24 Feb 15 12:57 _redirects
+-rw-------.  1 u0_a476 u0_a476 37318 Feb 15 12:57 all_worksheets.html
+drwx------.  4 u0_a476 u0_a476  3452 Feb 15 12:57 assets
+drwx------.  5 u0_a476 u0_a476  3452 Feb 15 12:57 assignments
+-rw-------.  1 u0_a476 u0_a476  9953 Feb 15 12:57 build_all_worksheets.py
+-rw-------.  1 u0_a476 u0_a476  2446 Feb 15 12:57 build_preview.py
+-rw-------.  1 u0_a476 u0_a476  3944 Feb 15 12:57 build_simple_all.py
+drwx------.  2 u0_a476 u0_a476  3452 Feb 15 12:57 core
+-rw-------.  1 u0_a476 u0_a476   909 Feb 15 12:57 generate_pdf.py
+-rw-------.  1 u0_a476 u0_a476  6481 Feb 15 12:57 index.html
+-rw-------.  1 u0_a476 u0_a476    89 Feb 15 12:57 netlify.toml
+-rw-------.  1 u0_a476 u0_a476  3166 Feb 15 12:57 preview.html
+drwx------.  2 u0_a476 u0_a476  3452 Feb 15 12:57 preview_pages
+-rw-------.  1 u0_a476 u0_a476   497 Feb 15 12:57 requirements.txt
+-rw-------.  1 u0_a476 u0_a476  6689 Feb 15 12:57 view.html
+drwx------.  3 u0_a476 u0_a476  3452 Feb 15 12:57 worksheets
+
+.git/description
+.git/config
+.git/HEAD
+.git/packed-refs
+.git/index
+.cursorrules
+.gitignore
+DEPLOY.md
+DISPLAY_AUDIT.md
+DISPLAY_CHECK.md
+EXTREME_PROMPT.md
+FINAL_DISPLAY_STATUS.md
+FINAL_LINK.txt
+FINAL_STATUS.md
+LINK.txt
+MATHEMATICAL_REVIEW.md
+NETLIFY_DEPLOY.md
+PROGRESS_REPORT.md
+PUBLISHED.md
+QUICK_DEPLOY.md
+README.md
+SOLUTION_KEY.md
+THE_LINK.md
+WORK_PLAN_EXTREME_IMPROVEMENTS.md
+_redirects
+all_worksheets.html
+assignments/.gitkeep
+build_all_worksheets.py
+build_preview.py
+build_simple_all.py
+core/create_linear_graph.py
+core/graph_engine.py
+core/pdf_engine.py
+core/worksheet_validator.py
+generate_pdf.py
+index.html
+netlify.toml
+preview.html
+preview_pages/kavba_a1_50_questions_coefficients.html
+preview_pages/kavba_a1_graph_reading.html
+preview_pages/kavba_a1_slope_table.html
+requirements.txt
+view.html

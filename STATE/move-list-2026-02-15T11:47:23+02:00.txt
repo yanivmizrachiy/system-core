@@ -1,0 +1,6 @@
+.git/COMMIT_EDITMSG
+.git/HEAD
+.git/hooks/applypatch-msg.sample
+.git/hooks/pre-commit.sample
+.git/index
+.git/logs/HEAD

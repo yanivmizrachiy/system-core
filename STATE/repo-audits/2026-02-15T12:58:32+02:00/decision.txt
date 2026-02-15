@@ -1,0 +1,3 @@
+REPO=homerh-math-worksheets
+TAG=ACTIVE
+AUDIT_DIR=/data/data/com.termux/files/home/system-core/STATE/repo-audits/2026-02-15T12:58:32+02:00

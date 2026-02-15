@@ -177,3 +177,261 @@ STATE/classification-2026-02-15T11:34:52+02:00.md
 **חסמים**
 - אין
 
+
+---
+
+## חזון-על (לא משתנה)
+- מערכת אחת מאוחדת שמנצלת את כל מה שכבר נבנה (Termux/GitHub/Workflows/Pages/Rules).\n- אין כפילויות ואין בלבול: SSOT אחד.\n- אוטומציה מקסימלית, ידני מינימלי.\n- אין מחיקה עיוורת: ניקוי רק באמצעות Move ל-TRASH + תיעוד.
+
+---
+
+## מטרות-על (רשימה מצטברת)
+- איחוד ידע: קליטת סיכומים ל-INBOX ומיפוי לפי קטגוריות.\n- מיפוי ריפואים וקבצים קיימים והפחתת כפילויות.\n- חיזוק לולאות GitHub (Issue → Action → Commit → RAW/Pages) איפה שכבר קיימות.\n- דשבורד אחד שמציג סטטוס, ריצות אחרונות, חסמים.
+
+---
+
+## סטטוס חי (מתעדכן תמיד)
+- מה בוצע לאחרונה: (ראה STATE/last_update.json)\n- מה פתוח עכשיו: \n- מה הבא בתור: \n- חסמים ידועים: \n- אחוז התקדמות: 
+
+---
+
+## תוכנית המשך (Roadmap קצר ומעשי)
+1) קליטת סיכומים: 10 קבצים ראשונים ל-INBOX + index.\n2) מיפוי ריפואים/תיקיות: קישור לרשימת ריפואים קיימים + קישורים.\n3) ניקוי כפילויות: יצירת move-list שמרני → TRASH move → בדיקה.\n4) אינטגרציה: לחבר system-core כמטא-מרכז לכל ריפו קיים (בלי לשכפל פרויקטים).\n5) שדרוגים חכמים בלבד: רק מה שמשרת מטרות-על.
+
+---
+
+## קטגוריה: CLEANUP
+
+### בוצע TRASH move אוטומטי (שמרני) — 2026-02-15T11:47:23+02:00
+[[CORE_LOG:2026-02-15|CLEANUP|בוצע TRASH move אוטומטי (שמרני)]]
+
+**מה בוצע**
+- נוצר STATE/move-list-2026-02-15T11:47:23+02:00.txt; הועברו פריטים ל-TRASH/2026-02-15T11:47:23+02:00 (ללא מחיקה)
+
+**מה הבא**
+- להריץ core-sync + להתחיל קליטת סיכומים ל-INBOX (10 ראשונים)
+
+**חסמים**
+- אין
+
+
+---
+
+## קטגוריה: GITHUB
+
+### מיפוי אוטומטי של כל הריפואים (inventory) — 2026-02-15T11:52:37+02:00
+[[CORE_LOG:2026-02-15|GITHUB|מיפוי אוטומטי של כל הריפואים (inventory)]]
+
+**מה בוצע**
+- נוצרו: STATE/github-repos.json + STATE/github-repos.md; נמצאו 61 ריפואים בחשבון yanivmizrachiy
+
+**מה הבא**
+- השלב הבא: תיוג ריפואים (ACTIVE/ARCHIVE/CLEANUP) + תוכנית ניקוי כפילויות (MOVE ל-TRASH בלבד)
+
+**חסמים**
+- אין
+
+
+---
+
+## קטגוריה: GITHUB
+
+### מיפוי ריפואים — רענון 2026-02-15T12:04:54+02:00 — 2026-02-15T12:04:56+02:00
+[[CORE_LOG:2026-02-15|GITHUB|מיפוי ריפואים — רענון 2026-02-15T12:04:54+02:00]]
+
+**מה בוצע**
+- נוצרו: STATE/github-repos.json + STATE/github-repos.md; נמצאו 61 ריפואים בחשבון yanivmizrachiy
+
+**מה הבא**
+- השלב הבא: תיוג ACTIVE/ARCHIVE/CLEANUP (שמרני) + תוכנית ניקוי כפילויות לכל ריפו (MOVE בלבד ל-TRASH)
+
+**חסמים**
+- אין
+
+
+---
+
+## קטגוריה: GITHUB
+
+### Inventory ריפואים — נבנה קובץ MD תקין — 2026-02-15T12:05:41+02:00
+[[CORE_LOG:2026-02-15|GITHUB|Inventory ריפואים — נבנה קובץ MD תקין]]
+
+**מה בוצע**
+- נוצרו/עודכנו: STATE/github-repos.json + STATE/github-repos.md; נספרו 61 ריפואים
+
+**מה הבא**
+- השלב הבא: תיוג ריפואים (ACTIVE/ARCHIVE/CLEANUP) + יצירת תוכנית סדר וניקוי לכל ריפו (MOVE בלבד ל-TRASH)
+
+**חסמים**
+- אין
+
+
+---
+
+## קטגוריה: GITHUB
+
+### Inventory ריפואים — build (argv-safe) 2026-02-15T12:07:25+02:00 — 2026-02-15T12:07:27+02:00
+[[CORE_LOG:2026-02-15|GITHUB|Inventory ריפואים — build (argv-safe) 2026-02-15T12:07:25+02:00]]
+
+**מה בוצע**
+- נוצרו/עודכנו: STATE/github-repos.json + STATE/github-repos.md; נספרו 61 ריפואים
+
+**מה הבא**
+- הבא: תיוג ריפואים ACTIVE/ARCHIVE/CLEANUP + תכנית ניקוי שמרני לכל ריפו (MOVE בלבד ל-TRASH)
+
+**חסמים**
+- אין
+
+
+---
+
+## קטגוריה: GITHUB
+
+### Inventory ריפואים — build (argv-safe) 2026-02-15T12:10:49+02:00 — 2026-02-15T12:10:52+02:00
+[[CORE_LOG:2026-02-15|GITHUB|Inventory ריפואים — build (argv-safe) 2026-02-15T12:10:49+02:00]]
+
+**מה בוצע**
+- נוצרו/עודכנו: STATE/github-repos.json + STATE/github-repos.md; נספרו 61 ריפואים
+
+**מה הבא**
+- הבא: תיוג ריפואים ACTIVE/ARCHIVE/CLEANUP + תכנית ניקוי שמרני לכל ריפו (MOVE בלבד ל-TRASH)
+
+**חסמים**
+- אין
+
+
+---
+
+## קטגוריה: GITHUB
+
+### Inventory ריפואים — build (argv-safe) 2026-02-15T12:11:11+02:00 — 2026-02-15T12:11:14+02:00
+[[CORE_LOG:2026-02-15|GITHUB|Inventory ריפואים — build (argv-safe) 2026-02-15T12:11:11+02:00]]
+
+**מה בוצע**
+- נוצרו/עודכנו: STATE/github-repos.json + STATE/github-repos.md; נספרו 61 ריפואים
+
+**מה הבא**
+- הבא: תיוג ריפואים ACTIVE/ARCHIVE/CLEANUP + תכנית ניקוי שמרני לכל ריפו (MOVE בלבד ל-TRASH)
+
+**חסמים**
+- אין
+
+
+---
+
+## קטגוריה: CLEANUP
+
+### נוצרו תוכניות CLEANUP ראשוניות (FIX) — 1 ריפואים — 2026-02-15T12:53:42+02:00
+[[CORE_LOG:2026-02-15|CLEANUP|נוצרו תוכניות CLEANUP ראשוניות (FIX) — 1 ריפואים]]
+
+**מה בוצע**
+- נוצר: STATE/cleanup-plans/2026-02-15T12:53:42+02:00 (תיקון NameError)
+
+**מה הבא**
+- הבא: לבחור ריפו ראשון ולהפיק לו move-list שמרני
+
+**חסמים**
+- אין
+
+
+---
+
+## קטגוריה: CLEANUP
+
+### אימות תוכניות CLEANUP (preview) — 2026-02-15T12:55:17+02:00
+[[CORE_LOG:2026-02-15|CLEANUP|אימות תוכניות CLEANUP (preview)]]
+
+**מה בוצע**
+- נמצאה תיקייה: STATE/cleanup-plans/2026-02-15T12:53:42+02:00 ; קבצים: 1 ; בוצע preview (head) בטרמינל
+
+**מה הבא**
+- הבא: לבחור ריפו ראשון מתוך הקבצים ולהפיק לו move-list שמרני (MOVE ל-TRASH בלבד)
+
+**חסמים**
+- אין
+
+
+---
+
+## קטגוריה: CLEANUP
+
+### נוצר move-list שמרני לריפו: homerh-math-worksheets — 2026-02-15T12:57:05+02:00
+[[CORE_LOG:2026-02-15|CLEANUP|נוצר move-list שמרני לריפו: homerh-math-worksheets]]
+
+**מה בוצע**
+- נוצר: /data/data/com.termux/files/home/system-core/STATE/cleanup-plans/2026-02-15T12:57:03+02:00/homerh-math-worksheets__move-list.txt ; מועמדים: 0 ; (ללא מחיקה, ללא הזזה עדיין)
+
+**מה הבא**
+- הבא: לבצע MOVE ל-TRASH רק אם הרשימה הגיונית (תריץ פקודת apply אחת שאשלח)
+
+**חסמים**
+- אין
+
+
+---
+
+## קטגוריה: CLEANUP
+
+### AUDIT שמרני לריפו: homerh-math-worksheets — 2026-02-15T12:58:32+02:00
+[[CORE_LOG:2026-02-15|CLEANUP|AUDIT שמרני לריפו: homerh-math-worksheets]]
+
+**מה בוצע**
+- move-list שמרני יצא ריק (COUNT=0). נוצרו דוחות audit: /data/data/com.termux/files/home/system-core/STATE/repo-audits/2026-02-15T12:58:32+02:00
+
+**מה הבא**
+- הבא: להחליט TAG חדש לריפו (ACTIVE/ARCHIVE) לפי audit, ואז לעבור לריפו הבא מתיקיית cleanup-plans
+
+**חסמים**
+- אין
+
+
+---
+
+## קטגוריה: GITHUB
+
+### החלטת TAG לריפו homerh-math-worksheets — 2026-02-15T13:00:41+02:00
+[[CORE_LOG:2026-02-15|GITHUB|החלטת TAG לריפו homerh-math-worksheets]]
+
+**מה בוצע**
+- נמצא audit אחרון: /data/data/com.termux/files/home/system-core/STATE/repo-audits/2026-02-15T12:58:32+02:00; move-list היה ריק; נקבע TAG=ACTIVE; נשמר: /data/data/com.termux/files/home/system-core/STATE/repo-audits/2026-02-15T12:58:32+02:00/decision.txt
+
+**מה הבא**
+- הבא: לעבור לריפו הבא מתוך cleanup-plans ולהפיק move-list שמרני
+
+**חסמים**
+- אין
+
+
+---
+
+## קטגוריה: SYSTEM
+
+### תיקון תקיעות pull (merge conflict) + ניקוי רעש ?? — 2026-02-15T13:16:57+02:00
+[[CORE_LOG:2026-02-15|SYSTEM|תיקון תקיעות pull (merge conflict) + ניקוי רעש ??]]
+
+**מה בוצע**
+- בוצע merge --abort / reset --merge לפי הצורך; הוקשח .gitignore כדי להפסיק זיהום status בקבצי סביבה; בוצע commit+push
+
+**מה הבא**
+- להריץ core-sync ואז להמשיך לריפו הבא בתיקיית cleanup-plans
+
+**חסמים**
+- אין
+
+
+---
+
+## קטגוריה: SYSTEM
+
+### תיקון תקיעות pull + הקשחת gitignore — 2026-02-15T13:17:19+02:00
+[[CORE_LOG:2026-02-15|SYSTEM|תיקון תקיעות pull + הקשחת gitignore]]
+
+**מה בוצע**
+- אומת כניסה לריפו system-core; בוצע abort ל-merge תקוע (אם היה); עודכן .gitignore כדי להפסיק רעש; commit+push
+
+**מה הבא**
+- להמשיך לריפו הבא מתוך cleanup-plans (שמרני)
+
+**חסמים**
+- אין
+

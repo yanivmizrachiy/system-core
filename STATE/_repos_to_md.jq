@@ -1,0 +1,1 @@
+sort_by(.updatedAt) | reverse | .[] | ([ "[" + .name + "](" + .url + ")", (if .isPrivate then "private" else "public" end), ((.updatedAt // "") | gsub("T";" ") | gsub("Z";"")), ((.defaultBranchRef.name // "")), ((.description // "") | .[0:80]) ] | @tsv)
