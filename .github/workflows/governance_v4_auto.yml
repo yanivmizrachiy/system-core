@@ -1,10 +1,10 @@
-name: Governance v4 (AUTO)
+name: governance v4 auto
 
 on:
   workflow_dispatch:
     inputs:
       top_n:
-        description: "How many top repos to process"
+        description: "How many repos to process (top risk)"
         required: false
         default: "20"
   schedule:
@@ -13,17 +13,13 @@ on:
 permissions:
   contents: write
 
-concurrency:
-  group: governance-v4-auto
-  cancel-in-progress: false
-
 jobs:
   run:
     runs-on: ubuntu-latest
     env:
       OWNER: yanivmizrachiy
       TOP_N: ${{ inputs.top_n || 20 }}
-      GH_TOKEN: ${{ secrets.GH_PAT }}
+      GH_TOKEN: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
     steps:
       - name: Checkout system-core
         uses: actions/checkout@v4
@@ -33,13 +29,15 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Sanity: gh + auth
+      - name: Sanity
         run: |
           gh --version
-          gh auth status || true
-          test -n "${GH_TOKEN}" || (echo "❌ Missing secret GH_PAT" && exit 2)
+          echo "OWNER=$OWNER TOP_N=$TOP_N"
+          if [ -z "${GH_TOKEN}" ]; then
+            echo "❌ Missing token (GH_PAT or GITHUB_TOKEN)"; exit 2
+          fi
 
-      - name: Run governance v4 batch
+      - name: Run governance v4 auto
         run: |
           python scripts/governance_v4_auto.py "${OWNER}" "${TOP_N}"
 
@@ -51,7 +49,7 @@ jobs:
             echo "ℹ️ nothing to commit"
             exit 0
           fi
-          git config user.name "yaniv-bot"
+          git config user.name  "yaniv-bot"
           git config user.email "yaniv-bot@users.noreply.github.com"
           git commit -m "governance: v4 auto $(date -Iseconds)"
           git push

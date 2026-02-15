@@ -706,3 +706,9 @@ STATE/classification-2026-02-15T11:34:52+02:00.md
   - move-list=STATE/repo-move-lists/2026-02-15T15:00:13+02:00/n8n__move-list.txt
   - audit=STATE/repo-audits/2026-02-15T15:00:13+02:00/n8n/noop_clean.txt
   - policy: NO DELETE (nothing to move).
+
+- 2026-02-15T15:46:58+02:00 | Installed automation engine
+  - added: scripts/governance_v4_auto.py (REAL, no TODO)
+  - added: .github/workflows/governance_v4_auto.yml (schedule + manual)
+  - policy: NO DELETE (MOVE ONLY to TRASH when applying cleanup).
+  - next: set repo secret GH_PAT in system-core (needed for private repos in Actions).
