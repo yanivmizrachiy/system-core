@@ -435,3 +435,20 @@ STATE/classification-2026-02-15T11:34:52+02:00.md
 **חסמים**
 - אין
 
+
+---
+
+## קטגוריה: SYSTEM
+
+### system-core הוחזר לריפו עצמאי — 2026-02-15T13:20:27+02:00
+[[CORE_LOG:2026-02-15|SYSTEM|system-core הוחזר לריפו עצמאי]]
+
+**מה בוצע**
+- אומת: TOP עכשיו צריך להיות system-core; main פעיל; origin=https://github.com/yanivmizrachiy/system-core.git; בוצע push
+
+**מה הבא**
+- להריץ core-sync ואז להמשיך CLEANUP לריפו הבא
+
+**חסמים**
+- אין
+
