@@ -722,3 +722,9 @@ STATE/classification-2026-02-15T11:34:52+02:00.md
   - turbo: top_n=20 | decisions_written=0 | clone_ok=0 | fail=0 | skip_existing=0
   - policy: NO DELETE (MOVE ONLY to TRASH when applying cleanup).
   - next: review dashboard-v4 + decisions; if you want apply -> run generated APPLY scripts (MOVE ONLY) OR automate apply via separate workflow.
+
+- 2026-02-15T13:59:24.589931+00:00 | governance_v4_auto.py finished
+  - outputs: /home/runner/work/system-core/system-core/STATE/governance-v4/2026-02-15T13-59-24.396478+00-00/repo-intelligence-v4.json , /home/runner/work/system-core/system-core/STATE/governance-v4/2026-02-15T13-59-24.396478+00-00/dashboard-v4.md
+  - turbo: top_n=20 | decisions_written=0 | clone_ok=0 | fail=0 | skip_existing=0
+  - policy: NO DELETE (MOVE ONLY to TRASH when applying cleanup).
+  - next: review dashboard-v4 + decisions; if you want apply -> run generated APPLY scripts (MOVE ONLY) OR automate apply via separate workflow.
