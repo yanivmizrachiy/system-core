@@ -1,5 +1,9 @@
 name: governance v4 auto
 
+env:
+  GH_TOKEN: ${{ secrets.GH_PAT }}
+  GITHUB_TOKEN: ${{ github.token }}
+
 on:
   workflow_dispatch:
     inputs:

@@ -11,19 +11,8 @@
 - מסקנה: הבעיה בהרשאות של GitHub Actions (לא בקוד המקומי).
 - מדיניות: אין מחיקות — רק MOVE ל-TRASH.
 
-### TOOLING (TERMUX)
-- Records below.
-
-- 2026-02-15T19:35:32+02:00 | Termux toolset upgraded
-  - installed: ripgrep(fd/fzf/bat/eza/jq/yq/uv/xh/yazi/z3/tree/tmux/htop/openssh/rsync)
-  - note: this log is auto-written by Termux command
-
-### GOVERNANCE (AUTO)
-- Runs recorded below.
-
-- 2026-02-15T19:49:26+02:00 | PATCH: engine=urllib_only_never_fail_v1 (Actions will commit STATE even on API errors)
-  - expected: Total repos becomes real OR errors become real (not stale)
-  - policy: NO DELETE (MOVE ONLY)
-
-- 2026-02-15T19:52:36+02:00 | PATCH: workflow governance_v4_auto.yml rewritten (no token-fail sanity; python-only)
-  - expected: STATE/governance-v4 will always be committed when script writes outputs
+## GOVERNANCE v4 (system-core)
+- מנוע: scripts/governance_v4_auto.py (GitHub REST, ללא gh api).
+- חובה: ב-Workflow env יש GITHUB_TOKEN, ואם רוצים private מלא — להגדיר Secret בשם GH_PAT עם הרשאות מתאימות.
+- תוצר: STATE/governance-v4/** כולל dashboard-v4.md ו-raw.json.
+- מדיניות: NO DELETE (MOVE ONLY ל-TRASH).
