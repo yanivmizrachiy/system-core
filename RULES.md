@@ -537,3 +537,20 @@ STATE/classification-2026-02-15T11:34:52+02:00.md
 **חסמים**
 - אין
 
+
+---
+
+## קטגוריה: CLEANUP
+
+### סגירת DONE בפועל: 14-1-26 — 2026-02-15T13:38:56+02:00
+[[CORE_LOG:2026-02-15|CLEANUP|סגירת DONE בפועל: 14-1-26]]
+
+**מה בוצע**
+- moved=NO (already moved or missing) ; from=STATE/cleanup-plans/2026-02-15T13:34:29+02:00 ; to=STATE/cleanup-plans-done/2026-02-15T13:34:29+02:00 ; next=-
+
+**מה הבא**
+- הבא: להריץ cycle על NEXT_REPO
+
+**חסמים**
+- אין
+
