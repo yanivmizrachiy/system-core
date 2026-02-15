@@ -160,3 +160,20 @@ STATE/classification-2026-02-15T11:34:52+02:00.md
 **חסמים**
 - אין
 
+
+---
+
+## קטגוריה: SYSTEM
+
+### התקנת core-sync — 2026-02-15T11:44:39+02:00
+[[CORE_LOG:2026-02-15|SYSTEM|התקנת core-sync]]
+
+**מה בוצע**
+- נוצר SCRIPTS/core-sync.sh (index+status+rules+push)
+
+**מה הבא**
+- להריץ core-sync אחרי כל פעולה משמעותית
+
+**חסמים**
+- אין
+
