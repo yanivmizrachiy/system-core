@@ -17,3 +17,10 @@
 - 2026-02-15T19:35:32+02:00 | Termux toolset upgraded
   - installed: ripgrep(fd/fzf/bat/eza/jq/yq/uv/xh/yazi/z3/tree/tmux/htop/openssh/rsync)
   - note: this log is auto-written by Termux command
+
+### GOVERNANCE (AUTO)
+- Runs recorded below.
+
+- 2026-02-15T19:49:26+02:00 | PATCH: engine=urllib_only_never_fail_v1 (Actions will commit STATE even on API errors)
+  - expected: Total repos becomes real OR errors become real (not stale)
+  - policy: NO DELETE (MOVE ONLY)
