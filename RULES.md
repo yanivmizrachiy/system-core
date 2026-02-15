@@ -762,3 +762,7 @@ STATE/classification-2026-02-15T11:34:52+02:00.md
 - 2026-02-15T16:12:33.522487+00:00 | governance_v4_auto.py clean rebuild
   - total_repos=0
   - policy: NO DELETE (MOVE ONLY)
+
+- 2026-02-15T17:08:10.608679+00:00 | PATCH: dual enumeration (public-first + optional /user/repos)
+  - totals: public=0 userrepos=0 merged=0
+  - policy: NO DELETE (MOVE ONLY)

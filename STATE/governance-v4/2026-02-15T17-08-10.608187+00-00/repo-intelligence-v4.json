@@ -1,0 +1,15 @@
+{
+  "generated": "2026-02-15T17:08:10.608476+00:00",
+  "owner": "yanivmizrachiy",
+  "total": 0,
+  "repos": [],
+  "raw": {
+    "generated": "2026-02-15T17:08:10.608321+00:00",
+    "owner": "yanivmizrachiy",
+    "public_count": 0,
+    "userrepos_count": 0,
+    "merged_total": 0,
+    "public_error": "Command '['gh', 'api', '/users/yanivmizrachiy/repos', '--paginate', '-f', 'per_page=100', '-f', 'type=owner', '--jq', '.[] | @json']' returned non-zero exit status 1.",
+    "userrepos_error": "Command '['gh', 'api', '/user/repos', '--paginate', '-f', 'per_page=100', '-f', 'affiliation=owner', '--jq', '.[] | @json']' returned non-zero exit status 1."
+  }
+}
