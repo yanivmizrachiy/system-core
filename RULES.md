@@ -629,3 +629,7 @@ STATE/classification-2026-02-15T11:34:52+02:00.md
 - 2026-02-15T14:28:43+02:00 | v3 recovery: dashboard rebuilt (hard-safe) | dir=STATE/governance-v3/2026-02-15T14:04:15+02:00
   - status: repo-intelligence.json ✅ ; dashboard.md ✅ ; stderr_file=STATE/governance-v3/2026-02-15T14:04:15+02:00/dashboard_build.stderr.txt
   - next: TURBO README-hash sampling (top-risk only, MAX=20) כדי לזהות כפילויות חכמות בלי RateLimit
+
+- 2026-02-15T14:37:17+02:00 | v4 FAILED: dir=STATE/governance-v4/2026-02-15T14:35:40+02:00
+  - outputs: OUT_JSON=STATE/governance-v4/2026-02-15T14:35:40+02:00/repo-intelligence-v4.json ; OUT_MD=STATE/governance-v4/2026-02-15T14:35:40+02:00/dashboard-v4.md
+  - stderr: STATE/governance-v4/2026-02-15T14:35:40+02:00/py.stderr.txt

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/system-core/STATE/governance-v4/2026-02-15T14:35:40+02:00/build_v4.py", line 138, in <module>
+    dash.append(f"- {e[name]} | risk={e[risk]} | {e[category]} | age={e[age_days]}d | {private if e[private] else public} | {e[url]}")
+                     ~^^^^^^
+KeyError: 'Yanivatar'
