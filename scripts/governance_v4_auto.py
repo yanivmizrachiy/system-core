@@ -6,7 +6,7 @@ from pathlib import Path
 def now_iso():
     return datetime.now(timezone.utc).isoformat()
 
-def api_get(url, tok="", tries=4):
+def api_get(url, tok):
     last = None
     for i in range(tries):
         try:
@@ -46,7 +46,7 @@ def list_repos(owner, tok):
         next_url = url
         seen = 0
         while next_url:
-            st, hdrs, body = api_get(next_url, tok=tok)
+            st, hdrs, body = api_get(next_url, tok)
             if st != 200:
                 errors.append({"where": label, "err": f"HTTP {st}"})
                 break
@@ -99,7 +99,7 @@ def main():
         raise SystemExit("missing OWNER/GITHUB_REPOSITORY_OWNER")
     top_n = int(os.environ.get("TOP_N") or "20")
 
-    tok = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN") or ""
+    tok = (os.getenv("GH_PAT") or os.getenv("GH_TOKEN") or os.getenv("GITHUB_TOKEN") or "").strip()
     repos, meta = list_repos(owner, tok)
 
     # tag heuristic
