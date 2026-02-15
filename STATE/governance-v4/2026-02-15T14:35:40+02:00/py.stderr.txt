@@ -1,5 +1,12 @@
-Traceback (most recent call last):
-  File "/data/data/com.termux/files/home/system-core/STATE/governance-v4/2026-02-15T14:35:40+02:00/build_v4.py", line 138, in <module>
-    dash.append(f"- {e[name]} | risk={e[risk]} | {e[category]} | age={e[age_days]}d | {private if e[private] else public} | {e[url]}")
-                     ~^^^^^^
-KeyError: 'Yanivatar'
+gh_api_json fail: repos/yanivmizrachiy/auto-sync-hub/readme Command '['gh', 'api', 'repos/yanivmizrachiy/auto-sync-hub/readme']' returned non-zero exit status 1.
+gh_api_json fail: repos/yanivmizrachiy/yaniv-control-center/readme Command '['gh', 'api', 'repos/yanivmizrachiy/yaniv-control-center/readme']' returned non-zero exit status 1.
+gh_api_json fail: repos/yanivmizrachiy/pdf-system/readme Command '['gh', 'api', 'repos/yanivmizrachiy/pdf-system/readme']' returned non-zero exit status 1.
+gh_api_json fail: repos/yanivmizrachiy/hishtalmut/readme Command '['gh', 'api', 'repos/yanivmizrachiy/hishtalmut/readme']' returned non-zero exit status 1.
+gh_api_json fail: repos/yanivmizrachiy/14-1-26/readme Command '['gh', 'api', 'repos/yanivmizrachiy/14-1-26/readme']' returned non-zero exit status 1.
+gh_api_json fail: repos/yanivmizrachiy/assistant-control-mobile/readme Command '['gh', 'api', 'repos/yanivmizrachiy/assistant-control-mobile/readme']' returned non-zero exit status 1.
+gh_api_json fail: repos/yanivmizrachiy/hadracha2/readme Command '['gh', 'api', 'repos/yanivmizrachiy/hadracha2/readme']' returned non-zero exit status 1.
+gh_api_json fail: repos/yanivmizrachiy/hakbaza/readme Command '['gh', 'api', 'repos/yanivmizrachiy/hakbaza/readme']' returned non-zero exit status 1.
+gh_api_json fail: repos/yanivmizrachiy/kavit/readme Command '['gh', 'api', 'repos/yanivmizrachiy/kavit/readme']' returned non-zero exit status 1.
+gh_api_json fail: repos/yanivmizrachiy/math-tutor-app/readme Command '['gh', 'api', 'repos/yanivmizrachiy/math-tutor-app/readme']' returned non-zero exit status 1.
+gh_api_json fail: repos/yanivmizrachiy/math-worksheet/readme Command '['gh', 'api', 'repos/yanivmizrachiy/math-worksheet/readme']' returned non-zero exit status 1.
+gh_api_json fail: repos/yanivmizrachiy/mivhan-math/readme Command '['gh', 'api', 'repos/yanivmizrachiy/mivhan-math/readme']' returned non-zero exit status 1.

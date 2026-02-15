@@ -633,3 +633,9 @@ STATE/classification-2026-02-15T11:34:52+02:00.md
 - 2026-02-15T14:37:17+02:00 | v4 FAILED: dir=STATE/governance-v4/2026-02-15T14:35:40+02:00
   - outputs: OUT_JSON=STATE/governance-v4/2026-02-15T14:35:40+02:00/repo-intelligence-v4.json ; OUT_MD=STATE/governance-v4/2026-02-15T14:35:40+02:00/dashboard-v4.md
   - stderr: STATE/governance-v4/2026-02-15T14:35:40+02:00/py.stderr.txt
+
+- 2026-02-15T14:45:20+02:00 | v4 OK: dir=STATE/governance-v4/2026-02-15T14:35:40+02:00
+  - outputs: STATE/governance-v4/2026-02-15T14:35:40+02:00/repo-intelligence-v4.json , STATE/governance-v4/2026-02-15T14:35:40+02:00/dashboard-v4.md
+  - note: README sampling may have partial failures; treated as non-fatal.
+  - policy: NO DELETE (review/move-list only).
+  - next: cleanup batch MAX=20 לפי top-risk מה-dashboard-v4.
