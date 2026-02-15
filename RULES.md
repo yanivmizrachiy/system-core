@@ -639,3 +639,8 @@ STATE/classification-2026-02-15T11:34:52+02:00.md
   - note: README sampling may have partial failures; treated as non-fatal.
   - policy: NO DELETE (review/move-list only).
   - next: cleanup batch MAX=20 לפי top-risk מה-dashboard-v4.
+
+- 2026-02-15T14:55:14+02:00 | cleanup-decision written (auto): repo=ai-control-hub-test
+  - TAG=ACTIVE ; move-list COUNT=0 ; move-list=STATE/repo-move-lists/2026-02-15T13:47:02+02:00/ai-control-hub-test__move-list.txt
+  - audit=STATE/repo-audits/2026-02-15T14:55:14+02:00/ai-control-hub-test ; decision=STATE/repo-decisions/ai-control-hub-test.json
+  - policy: NO DELETE (MOVE ONLY to TRASH when applying cleanup).

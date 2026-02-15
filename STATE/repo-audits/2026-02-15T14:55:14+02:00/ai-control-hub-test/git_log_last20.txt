@@ -1,0 +1,14 @@
+c5de238 chore: add apply issue template (auto label)
+2b305f6 chore: add assistant apply workflow (issues -> commit)
+6333709 Fix syntax error in createFile method
+420d411 Add SHA handling for existing report files
+90ca830 Modify createFile method to accept optional SHA
+42ce510 🚀 Enable automatic agent execution via server + GitHub Actions
+2a46f9b Add comprehensive SETUP.md guide with Hebrew instructions
+3dcd2d3 Add example environment configuration file
+f926a33 Add complete server.js with Safety Check + GitHub Integration + First Agent
+1a98d09 Add package.json with all dependencies
+909c40c 📊 Automated daily report - 2026-01-15
+bd687ec Add daily report generation workflow
+34cf15d Add initial test results for AI Control Hub
+bab8bc5 Initial commit
