@@ -605,3 +605,20 @@ STATE/classification-2026-02-15T11:34:52+02:00.md
 **חסמים**
 - אין
 
+
+---
+
+## קטגוריה: CLEANUP
+
+### CYCLE+DONE: ai-control-hub-test — 2026-02-15T13:47:05+02:00
+[[CORE_LOG:2026-02-15|CLEANUP|CYCLE+DONE: ai-control-hub-test]]
+
+**מה בוצע**
+- TAG=ACTIVE ; move-list COUNT=0 ; move-list=STATE/repo-move-lists/2026-02-15T13:47:02+02:00/ai-control-hub-test__move-list.txt ; audit=STATE/repo-audits/2026-02-15T13:47:02+02:00/ai-control-hub-test ; decision=STATE/repo-decisions/ai-control-hub-test.json ; plan_moved=YES
+
+**מה הבא**
+- הבא: להמשיך לריפו הבא אוטומטית
+
+**חסמים**
+- אין
+
