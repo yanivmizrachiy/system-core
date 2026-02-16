@@ -9,6 +9,9 @@ env:
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 on:
+  workflow_run:
+    workflows: ["governance v4 auto"]
+    types: [completed]
   schedule:
     - cron: "0 */6 * * *"
   workflow_dispatch:
@@ -42,6 +45,14 @@ jobs:
       
       - name: Run governance v4 auto
         run: |
+      - name: AUTO-RULES-SYNC
+        if: success()
+        run: |
+          echo "" >> RULES.md
+          echo "### AUTO RUN PROOF" >> RULES.md
+          echo "run_id=${{ github.run_id }}" >> RULES.md
+          echo "sha=${{ github.sha }}" >> RULES.md
+    
           python scripts/governance_v4_auto.py "${OWNER}" "${TOP_N}"
       
       - name: Commit & Push (if changed)
