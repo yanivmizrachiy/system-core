@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import os, json, time, urllib.request, urllib.parse
+import os, json, time, urllib.request, urllib.parse, urllib.error, sys
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -7,7 +7,7 @@ def now_iso():
     return datetime.now(timezone.utc).isoformat()
 
 def api_get(url, tok, tries=3):
-    last = None
+    """Production-grade API call with exponential backoff and detailed error handling."""
     for i in range(tries):
         try:
             req = urllib.request.Request(url)
@@ -15,13 +15,56 @@ def api_get(url, tok, tries=3):
             req.add_header("X-GitHub-Api-Version", "2022-11-28")
             if tok:
                 req.add_header("Authorization", f"Bearer {tok}")
+            
             with urllib.request.urlopen(req, timeout=45) as resp:
                 data = resp.read().decode("utf-8", errors="replace")
                 return resp.status, dict(resp.headers), data
+                
+        except urllib.error.HTTPError as e:
+            status = e.code
+            if status == 401:
+                raise RuntimeError("HTTP 401 Unauthorized: GitHub token invalid or missing. Ensure GITHUB_TOKEN is exported in workflow environment.")
+            elif status == 403:
+                # Rate limit or permission issue
+                if i < tries - 1:
+                    wait_time = 2 ** i
+                    print(f"HTTP 403: Rate limit or permission denied. Retrying in {wait_time}s...", file=sys.stderr)
+                    time.sleep(wait_time)
+                    continue
+                else:
+                    raise RuntimeError(f"HTTP 403 Forbidden: Rate limit exceeded or insufficient permissions after {tries} attempts.")
+            elif status >= 500:
+                # Server error - retry with backoff
+                if i < tries - 1:
+                    wait_time = 2 ** i
+                    print(f"HTTP {status}: Server error. Retrying in {wait_time}s...", file=sys.stderr)
+                    time.sleep(wait_time)
+                    continue
+                else:
+                    raise RuntimeError(f"HTTP {status}: Server error persisted after {tries} attempts.")
+            else:
+                raise RuntimeError(f"HTTP {status}: {e.reason}")
+                
+        except urllib.error.URLError as e:
+            # Network error
+            if i < tries - 1:
+                wait_time = 2 ** i
+                print(f"Network error: {e.reason}. Retrying in {wait_time}s...", file=sys.stderr)
+                time.sleep(wait_time)
+                continue
+            else:
+                raise RuntimeError(f"Network error after {tries} attempts: {e.reason}")
+                
         except Exception as e:
-            last = str(e)
-            time.sleep(1 + i*2)
-    raise RuntimeError(last or "unknown error")
+            if i < tries - 1:
+                wait_time = 2 ** i
+                print(f"Unexpected error: {e}. Retrying in {wait_time}s...", file=sys.stderr)
+                time.sleep(wait_time)
+                continue
+            else:
+                raise RuntimeError(f"Unknown error after {tries} attempts: {e}")
+    
+    raise RuntimeError("Retry exhausted without success")
 
 def parse_next_link(link_hdr: str):
     # Link: <...>; rel="next", <...>; rel="last"
@@ -29,7 +72,7 @@ def parse_next_link(link_hdr: str):
         return None
     parts = [p.strip() for p in link_hdr.split(",")]
     for p in parts:
-        if rel_next in p:
+        if 'rel="next"' in p:
             left = p.split(";")[0].strip()
             if left.startswith("<") and left.endswith(">"):
                 return left[1:-1]
@@ -45,26 +88,32 @@ def list_repos(owner, tok):
         nonlocal merged, errors
         next_url = url
         seen = 0
+
         while next_url:
             st, hdrs, body = api_get(next_url, tok)
             if st != 200:
                 errors.append({"where": label, "err": f"HTTP {st}"})
                 break
+
             try:
                 arr = json.loads(body)
             except Exception as e:
                 errors.append({"where": label, "err": f"JSON parse error: {e}"})
                 break
+
             if isinstance(arr, dict) and "message" in arr:
-                errors.append({"where": label, "err": f"{arr.get(message)}"})
+                errors.append({"where": label, "err": f"{arr.get('message')}"})
                 break
+
             if not isinstance(arr, list):
                 errors.append({"where": label, "err": f"unexpected payload type: {type(arr)}"})
                 break
+
             for r in arr:
                 name = r.get("name")
                 if not name:
                     continue
+
                 merged[name] = {
                     "name": name,
                     "private": bool(r.get("private", False)),
@@ -76,12 +125,14 @@ def list_repos(owner, tok):
                     "html_url": r.get("html_url") or "",
                 }
                 seen += 1
+
             next_url = parse_next_link(hdrs.get("Link", ""))
+
         return seen
 
     # authenticated first
     c_user = 0
-    c_pub  = 0
+    c_pub = 0
 
     if tok:
         c_user = harvest("https://api.github.com/user/repos?per_page=100&affiliation=owner", "user(/user/repos)")
@@ -94,18 +145,41 @@ def list_repos(owner, tok):
     return list(merged.values()), {"user_count": c_user, "public_count": c_pub, "errors": errors}
 
 def main():
+    # Authentication guard
+    tok = (os.getenv("GH_PAT") or os.getenv("GH_TOKEN") or os.getenv("GITHUB_TOKEN") or "").strip()
+    
+    if not tok:
+        print("ERROR: GH_TOKEN not found in environment.", file=sys.stderr)
+        print("Ensure workflow exports secrets.GITHUB_TOKEN.", file=sys.stderr)
+        sys.exit(1)
+    
+    # Self-diagnostic mode
+    if "--self-test" in sys.argv:
+        print("[SELF-TEST MODE]")
+        print(f"GH_TOKEN present: {bool(tok)}")
+        try:
+            st, hdrs, body = api_get("https://api.github.com/user", tok)
+            user_data = json.loads(body)
+            print(f"Authenticated as: {user_data.get('login', 'unknown')}")
+            print(f"Token scopes: {hdrs.get('X-OAuth-Scopes', 'N/A')}")
+            print("Self-test PASSED")
+        except Exception as e:
+            print(f"Self-test FAILED: {e}", file=sys.stderr)
+            sys.exit(1)
+        sys.exit(0)
+    
     owner = os.environ.get("OWNER") or os.environ.get("GITHUB_REPOSITORY_OWNER") or ""
     if not owner:
         raise SystemExit("missing OWNER/GITHUB_REPOSITORY_OWNER")
+    
     top_n = int(os.environ.get("TOP_N") or "20")
-
-    tok = (os.getenv("GH_PAT") or os.getenv("GH_TOKEN") or os.getenv("GITHUB_TOKEN") or "").strip()
+    
     repos, meta = list_repos(owner, tok)
-
+    
     # tag heuristic
     def tag(r):
         return "ACTIVE" if (r.get("pushed_at") or "") else "UNKNOWN"
-
+    
     items = []
     for r in repos:
         items.append({
@@ -117,7 +191,7 @@ def main():
             "tag": tag(r),
             "url": r["html_url"],
         })
-
+    
     def risk_key(x):
         score = 0
         if not x["archived"]: score += 5
@@ -126,16 +200,16 @@ def main():
         score += min(int(x["size_kb"]), 500000) / 100000.0
         if x["private"]: score += 0.5
         return -score
-
+    
     highest = sorted(items, key=risk_key)[:top_n]
-
+    
     out_dir = Path("STATE/governance-v4") / now_iso().replace(":", "-")
     out_dir.mkdir(parents=True, exist_ok=True)
-
-    out_raw  = out_dir / "raw.json"
+    
+    out_raw = out_dir / "raw.json"
     out_json = out_dir / "repo-intelligence-v4.json"
-    out_md   = out_dir / "dashboard-v4.md"
-
+    out_md = out_dir / "dashboard-v4.md"
+    
     out_raw.write_text(json.dumps({
         "generated": now_iso(),
         "owner": owner,
@@ -145,7 +219,7 @@ def main():
         "merged_total": len(items),
         "errors": meta.get("errors", []),
     }, ensure_ascii=False, indent=2), encoding="utf-8")
-
+    
     out_json.write_text(json.dumps({
         "generated": now_iso(),
         "owner": owner,
@@ -154,7 +228,7 @@ def main():
         "highest_risk": highest,
         "errors": meta.get("errors", []),
     }, ensure_ascii=False, indent=2), encoding="utf-8")
-
+    
     lines = []
     lines.append("# GOVERNANCE DASHBOARD v4 (AUTO)")
     lines.append("")
@@ -162,35 +236,40 @@ def main():
     lines.append(f"Total repos: {len(items)}")
     lines.append("")
     lines.append("## Enumeration")
-    lines.append(f"- public (/users/{{owner}}/repos): {meta.get(public_count,0)}")
-    lines.append(f"- user (/user/repos): {meta.get(user_count,0)} token_present={bool(tok)}")
+    lines.append(f"- public (/users/{{owner}}/repos): {meta.get('public_count',0)}")
+    lines.append(f"- user (/user/repos): {meta.get('user_count',0)} token_present={bool(tok)}")
+    
     if meta.get("errors"):
         lines.append("")
         lines.append("## Errors")
         for e in meta["errors"][:10]:
-            lines.append(f"- {e.get(where)}: {e.get(err)}")
+            lines.append(f"- {e.get('where')}: {e.get('err')}")
+    
     lines.append("")
     lines.append("## Highest risk (top_n)")
     for x in highest:
-        lines.append(f"- {x[name]} | tag={x[tag]} | private={x[private]} | archived={x[archived]} | issues={x[open_issues]} | size_kb={x[size_kb]}")
+        lines.append(f"- {x['name']} | tag={x['tag']} | private={x['private']} | archived={x['archived']} | issues={x['open_issues']} | size_kb={x['size_kb']}")
     lines.append("")
+    
     out_md.write_text("\n".join(lines), encoding="utf-8")
-
+    
     # Append short run log into RULES.md
     rules = Path("RULES.md")
     rules.touch(exist_ok=True)
     mark = "### GOVERNANCE (AUTO)"
     txt = rules.read_text(encoding="utf-8", errors="replace")
+    
     if mark not in txt:
         txt += "\n\n" + mark + "\n- Runs recorded below.\n"
+    
     txt += (
         f"\n- {now_iso()} | governance_v4_auto.py (REST, no gh)\n"
         f"  - total_repos={len(items)} top_n={top_n} token_present={bool(tok)}\n"
         f"  - outputs: {out_json} , {out_md}\n"
         f"  - policy: NO DELETE (MOVE ONLY to TRASH).\n"
     )
+    
     rules.write_text(txt, encoding="utf-8")
-
     print("OK")
 
 if __name__ == "__main__":
