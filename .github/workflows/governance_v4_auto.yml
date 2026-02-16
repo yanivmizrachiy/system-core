@@ -1,9 +1,16 @@
 name: governance v4 auto
 
+concurrency:
+  group: governance-v4-auto
+  cancel-in-progress: true
+
+
 env:
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 on:
+  schedule:
+    - cron: "0 */6 * * *"
   workflow_dispatch:
     inputs:
       top_n:
