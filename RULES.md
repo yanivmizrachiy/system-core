@@ -30,3 +30,11 @@
 - 2026-02-15T18:17:31.891338 | APPLY MOVE-ONLY (Actions)
   - applied=0 scanned=5
   - policy: NO DELETE (MOVE ONLY to TRASH)
+
+
+### GOVERNANCE (AUTO)
+- Runs recorded below.
+
+- 2026-02-16T15-46-20Z | governance_v4_auto.py (GITHUB_TOKEN only)
+  - total_repos=54 top_n=20
+  - outputs: STATE/governance-v4/2026-02-16T15-46-20Z/repo-intelligence-v4.json, STATE/governance-v4/2026-02-16T15-46-20Z/dashboard-v4.md
