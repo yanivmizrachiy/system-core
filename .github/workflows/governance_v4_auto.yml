@@ -14,8 +14,9 @@ on:
 permissions:
   contents: write
   actions: read
-  contents: read  packages: read
-
+  contents: read
+  actions: read
+  packages: read
 jobs:
   run:
     runs-on: ubuntu-latest
