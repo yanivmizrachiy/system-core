@@ -6,7 +6,7 @@ from pathlib import Path
 def now_iso():
     return datetime.now(timezone.utc).isoformat()
 
-def api_get(url, tok):
+def api_get(url, tok, tries=3):
     last = None
     for i in range(tries):
         try:
