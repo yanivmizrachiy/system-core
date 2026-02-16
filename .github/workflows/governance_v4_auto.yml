@@ -1,8 +1,7 @@
 name: governance v4 auto
 
 env:
-  GH_TOKEN: ${{ secrets.GH_PAT }}
-  GITHUB_TOKEN: ${{ github.token }}
+  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 on:
   workflow_dispatch:
@@ -14,6 +13,8 @@ on:
 
 permissions:
   contents: write
+  actions: read
+  metadata: read
 
 jobs:
   run:
@@ -21,22 +22,21 @@ jobs:
     env:
       OWNER: ${{ github.repository_owner }}
       TOP_N: ${{ inputs.top_n || 20 }}
-      # allow empty; script handles no_token case and still writes outputs
-      GH_TOKEN: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
-
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
     steps:
       - name: Checkout system-core
         uses: actions/checkout@v4
-
+        
       - name: Setup python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-
+          
       - name: Run governance v4 auto
         run: |
           python scripts/governance_v4_auto.py "${OWNER}" "${TOP_N}"
-
+          
       - name: Commit & Push (if changed)
         run: |
           git status -sb
@@ -45,7 +45,7 @@ jobs:
             echo "ℹ️ nothing to commit"
             exit 0
           fi
-          git config user.name  "yaniv-bot"
+          git config user.name "yaniv-bot"
           git config user.email "yaniv-bot@users.noreply.github.com"
           git commit -m "governance: v4 auto $(date -Iseconds)"
           git push
