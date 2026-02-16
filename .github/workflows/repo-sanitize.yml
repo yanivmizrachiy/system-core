@@ -1,0 +1,79 @@
+name: Repository Sanitization (Windows Detox)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  sanitize:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Sanitize filenames (Windows-incompatible characters)
+        run: |
+          #!/bin/bash
+          set -e
+          
+          echo "Scanning for Windows-incompatible filenames..."
+          ILLEGAL_CHARS='[:"<>|?*]'
+          
+          # Find files with illegal characters
+          FILES_TO_FIX=$(find . -type f -name "*${ILLEGAL_CHARS}*" 2>/dev/null | grep -v '.git/' || true)
+          
+          if [ -z "$FILES_TO_FIX" ]; then
+            echo "✓ No illegal filenames found. Repository is clean."
+            exit 0
+          fi
+          
+          echo "Found files with illegal characters:"
+          echo "$FILES_TO_FIX"
+          echo ""
+          
+          # Process each file
+          echo "$FILES_TO_FIX" | while IFS= read -r oldpath; do
+            if [ -z "$oldpath" ]; then continue; fi
+            
+            dirname=$(dirname "$oldpath")
+            basename=$(basename "$oldpath")
+            
+            # Replace illegal characters with hyphens
+            newbasename=$(echo "$basename" | tr ':"<>|?*' '-')
+            newpath="${dirname}/${newbasename}"
+            
+            # Handle collisions
+            if [ -e "$newpath" ] && [ "$oldpath" != "$newpath" ]; then
+              counter=1
+              name="${newbasename%.*}"
+              ext="${newbasename##*.}"
+              if [ "$name" = "$newbasename" ]; then ext=""; fi
+              while [ -e "${dirname}/${name}-${counter}${ext:+.}${ext}" ]; do
+                counter=$((counter + 1))
+              done
+              newpath="${dirname}/${name}-${counter}${ext:+.}${ext}"
+            fi
+            
+            echo "Renaming: $oldpath -> $newpath"
+            git mv "$oldpath" "$newpath"
+          done
+          
+          echo ""
+          echo "✓ Sanitization complete"
+      
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: sanitize Windows-incompatible filenames (automated)"
+            git push
+            echo "✓ Changes committed and pushed"
+          fi
