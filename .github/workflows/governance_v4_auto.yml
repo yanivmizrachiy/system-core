@@ -1,25 +1,13 @@
 name: governance v4 auto
 
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */6 * * *"
+
 concurrency:
   group: governance-v4-auto
   cancel-in-progress: true
-
-
-env:
-  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-on:
-  workflow_run:
-    workflows: ["governance v4 auto"]
-    types: [completed]
-  schedule:
-    - cron: "0 */6 * * *"
-  workflow_dispatch:
-    inputs:
-      top_n:
-        description: "How many repos to list in dashboard (top)"
-        required: false
-        default: "20"
 
 permissions:
   contents: write
@@ -29,41 +17,23 @@ permissions:
 jobs:
   run:
     runs-on: ubuntu-latest
-    env:
-      OWNER: ${{ github.repository_owner }}
-      TOP_N: ${{ inputs.top_n || 20 }}
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    
     steps:
-      - name: Checkout system-core
+      - name: Checkout
         uses: actions/checkout@v4
-      
-      - name: Setup python
+
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      
-      - name: Run governance v4 auto
+
+      - name: Run governance
         run: |
-      - name: AUTO-RULES-SYNC
-        if: success()
+          python scripts/governance_v4_auto.py
+
+      - name: Commit state if changed
         run: |
-          echo "" >> RULES.md
-          echo "### AUTO RUN PROOF" >> RULES.md
-          echo "run_id=${{ github.run_id }}" >> RULES.md
-          echo "sha=${{ github.sha }}" >> RULES.md
-    
-          python scripts/governance_v4_auto.py "${OWNER}" "${TOP_N}"
-      
-      - name: Commit & Push (if changed)
-        run: |
-          git status -sb
-          git add -A
-          if git diff --cached --quiet; then
-            echo "ℹ️ nothing to commit"
-            exit 0
-          fi
-          git config user.name "yaniv-bot"
-          git config user.email "yaniv-bot@users.noreply.github.com"
-          git commit -m "governance: v4 auto $(date -Iseconds)"
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add STATE || true
+          git diff --cached --quiet || git commit -m "auto: governance v4 state update"
           git push
