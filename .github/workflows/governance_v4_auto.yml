@@ -1,5 +1,8 @@
 name: governance v4 auto
 
+env:
+  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 on:
   workflow_dispatch:
   schedule:
@@ -17,6 +20,9 @@ permissions:
 jobs:
   run:
     runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
