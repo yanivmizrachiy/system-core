@@ -15,6 +15,7 @@ permissions:
   contents: write
   actions: read
   metadata: read
+  packages: read
 
 jobs:
   run:
