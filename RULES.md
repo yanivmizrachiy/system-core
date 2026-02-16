@@ -90,3 +90,7 @@
 **עודכן אוטומטית:** 2026-02-16T20:53:01Z
 <!-- AUTO:ACHIEVEMENTS:END -->
 
+
+- 2026-02-16T20-56-06Z | governance_v4_auto.py (GITHUB_TOKEN only)
+  - total_repos=57 top_n=20
+  - outputs: STATE/governance-v4/2026-02-16T20-56-06Z/repo-intelligence-v4.json, STATE/governance-v4/2026-02-16T20-56-06Z/dashboard-v4.md
