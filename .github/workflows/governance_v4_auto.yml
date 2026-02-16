@@ -14,9 +14,8 @@ on:
 permissions:
   contents: write
   actions: read
-  contents: read
-  actions: read
   packages: read
+
 jobs:
   run:
     runs-on: ubuntu-latest
@@ -24,20 +23,20 @@ jobs:
       OWNER: ${{ github.repository_owner }}
       TOP_N: ${{ inputs.top_n || 20 }}
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
+    
     steps:
       - name: Checkout system-core
         uses: actions/checkout@v4
-        
+      
       - name: Setup python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-          
+      
       - name: Run governance v4 auto
         run: |
           python scripts/governance_v4_auto.py "${OWNER}" "${TOP_N}"
-          
+      
       - name: Commit & Push (if changed)
         run: |
           git status -sb
