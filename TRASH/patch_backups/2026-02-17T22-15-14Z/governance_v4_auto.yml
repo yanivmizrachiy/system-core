@@ -36,25 +36,6 @@ jobs:
         run: |
           python scripts/governance_v4_auto.py
 
-      - name: Sanitize filenames (Windows-safe)
-        shell: bash
-        run: |
-          python - <<PY
-          import subprocess
-          from pathlib import Path
-          def out(*a):
-              return subprocess.check_output(a).decode("utf-8","replace")
-          files = out("git","ls-files","-z").split("\0")
-          bad = [f for f in files if f and ":" in f]
-          bad.sort(key=lambda s: s.count("/"), reverse=True)
-          if bad:
-              print(f"Sanitizing {len(bad)} paths containing :")
-          for old in bad:
-              new = old.replace(":", "-")
-              Path(new).parent.mkdir(parents=True, exist_ok=True)
-              subprocess.check_call(["git","mv","-f", old, new])
-          PY
-
       - name: Commit state if changed
         run: |
           git config user.name "github-actions"
