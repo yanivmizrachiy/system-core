@@ -62,3 +62,7 @@ jobs:
           git add STATE || true
           git diff --cached --quiet || git commit -m "auto: governance v4 state update"
           git push
+
+      - name: Aggregate Unified State
+        run: python scripts/aggregate_state.py
+  

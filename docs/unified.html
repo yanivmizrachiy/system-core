@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>Unified Control</title>
+<style>
+body{font-family:Heebo,Arial;background:#f4f6fb;padding:40px}
+.card{background:white;padding:20px;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+</style>
+</head>
+<body>
+<div class="card">
+<h2>Unified System Status</h2>
+<pre id="data"></pre>
+</div>
+<script>
+fetch("data/unified.json")
+.then(r=>r.json())
+.then(d=>{document.getElementById("data").textContent=JSON.stringify(d,null,2)})
+</script>
+</body>
+</html>
