@@ -1,15 +1,51 @@
-# SYSTEM CORE — MASTER BRAIN
+# SUPER REPO — SYSTEM MAP (OFFICIAL)
 
-Activated: 2026-02-22T22:27:27+02:00
+## 🎯 ROLE
+system-core הוא ריפו-העל (Master Brain / Single Source of Truth).
 
-## Role
-This repository is the SUPER REPOSITORY (Source of Truth) of the entire ecosystem.
+כל החלטה אסטרטגית, חוק, מבנה מערכת ודשבורד מקורם כאן.
 
-## Responsibilities
-- Global governance
-- Repo hierarchy definition
-- System-wide rules
-- Status dashboards
-- Architectural decisions
+---
 
-All other repositories must align to this structure.
+## 🧠 MASTER BRAIN
+- system-core
+
+אחראי על:
+- RULES.md
+- RULES_OF_ENGAGEMENT.md
+- dashboard-v4.md
+- STATE/
+- REPOS_MAP.md
+
+---
+
+## ⚙️ EXECUTION ENGINE
+- my-assistant
+
+תפקיד:
+- למשוך Master Pack
+- לבצע פעולות
+- לסנכרן
+- לא לקבל החלטות אסטרטגיות עצמאיות
+
+---
+
+## 📦 MASTER PACK (Export Layer)
+הקבצים שמנועים מושכים:
+
+- RULES.md
+- RULES_OF_ENGAGEMENT.md
+- README.md
+- dashboard-v4.md
+- STATE/README.md
+- SUPER_REPO.md
+- REPOS_MAP.md
+
+---
+
+## 🛑 GOVERNANCE RULES
+- אין דמו
+- אין מחיקה (NO DELETE)
+- כל שינוי מתועד
+- system-core הוא מקור אמת יחיד
+

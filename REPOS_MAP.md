@@ -1,22 +1,21 @@
-# REPOSITORIES MAP
+# REPOS MAP — OFFICIAL STRUCTURE
 
-Updated: 2026-02-22T22:27:27+02:00
+## MASTER
+- system-core (source of truth)
 
-## Core Brain
-- system-core (MASTER)
+## ENGINE
+- my-assistant (execution)
 
-## AI / Automation
-- my-assistant
-- github-2
-- n8n
-
-## Education / Content
-- studiomath
-- pdf-system
-- pdf-system-site
+## DOCUMENTATION / PUBLIC
 - daf-klalim
 
-## Interface / Entry
+## PDF / EDUCATION SYSTEMS
+- pdf-system
+- pdf-system-site
+- studiomath
+
+## AUTOMATION / INFRA
+- n8n
+- github-2
 - start-hub
-- erevtov
 
