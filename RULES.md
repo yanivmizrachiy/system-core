@@ -103,3 +103,8 @@
 ## 🧾 יומן ריצות Governance v4 (אוטומטי)
 <!-- AUTO:RUNLOG:END -->
 
+
+## SYSTEM HIERARCHY (AUTO-DECLARED 2026-02-22T22:27:27+02:00)
+- system-core = MASTER BRAIN
+- my-assistant = EXECUTION ENGINE
+- All repos align to system-core
