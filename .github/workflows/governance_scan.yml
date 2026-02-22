@@ -1,0 +1,24 @@
+name: Governance Scan
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */6 * * *"
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install GH CLI
+        run: |
+          sudo apt update
+          sudo apt install gh -y
+
+      - name: Run Governance Scan
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          chmod +x governance/scan_all_repos.sh
+          ./governance/scan_all_repos.sh
