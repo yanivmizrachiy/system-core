@@ -1,0 +1,1 @@
+# 🧠 MASTER SYSTEM LOG — system-core\n\n- Initialized by GOV align (safe, no-overwrite)\n- Time: 2026-03-01T00:32:29+02:00\n
