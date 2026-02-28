@@ -1,0 +1,1 @@
+# 📌 CONTROL INDEX — system-core\n\n## 2026-03-01T00:32:29+02:00 — init\n
